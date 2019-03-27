@@ -1,0 +1,30 @@
+.Navbar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  font-size: calc(8px + 2vmin);
+}
+
+.home {
+  font-size: calc(18px + 2vmin);
+  font-weight: bold;
+  padding-left: 4%;
+  margin-top: -1%;
+}
+
+.tabs {
+  display: flex;
+  padding-left: 43%;
+}
+
+.tabs p {
+  padding-left: 8%;
+  display: inline-flex;
+  width: 40%;
+}
+
+.loginIcon {
+  width: 30%;
+  margin-top: -20%;
+  padding-left: 5%;
+}
