@@ -17,14 +17,17 @@
   padding-left: 43%;
 }
 
-.tabs p {
+a {
   padding-left: 8%;
-  display: inline-flex;
+  display: flex;
   width: 40%;
+  text-decoration: none;
+  color: black;
 }
 
 .loginIcon {
   width: 30%;
   margin-top: -20%;
+  display: inline-flex;
   padding-left: 5%;
 }
