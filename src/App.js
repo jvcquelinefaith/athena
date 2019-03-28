@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
 import NavBar from './NavBar.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavBar />
-        <div className="App-header">
-          <img className="backgoundImg" src={require('./WIC.png')}/>
-          <img className="sideCircle" src={require('./circle.png')}/>
-        </div>
+      <div id="App">
+        <Container>
+          <Row>
+            <NavBar />
+          </Row>
+          <Row id="App-header" className="row">
+            <Col md="4"> <img id="sideCircle" src={require('./circle.png')}/> </Col>
+            <Col md="8"> <img id="backgoundImg" src={require('./WIC.png')}/> </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

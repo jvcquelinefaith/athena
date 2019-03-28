@@ -4,7 +4,8 @@ import './Schools.css';
 class Schools extends Component {
   render() {
     return (
-      <div className="Schools"> </div>
+      <div id="Schools" className="row">
+      </div>
     )
   }
 }

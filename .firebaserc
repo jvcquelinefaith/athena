@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "athena-6cebb",
+    "default": "athena-6cebb"
+  }
+}
