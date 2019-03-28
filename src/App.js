@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <header className="App-header">
+        <div className="App-header">
           <img className="backgoundImg" src={require('./WIC.png')}/>
           <img className="sideCircle" src={require('./circle.png')}/>
-        </header>
+        </div>
       </div>
     );
   }

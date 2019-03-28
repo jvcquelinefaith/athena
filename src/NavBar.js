@@ -12,7 +12,7 @@ class NavBar extends Component {
       <Router>
         <div className="Navbar">
           <span className="home">
-            <p>athena</p>
+            <Link to="/"><p>athena</p></Link>
           </span>
           <span className="tabs">
             <Link to="/schools"> <p>schools</p> </Link>
@@ -20,7 +20,8 @@ class NavBar extends Component {
             <Link to="/associations"> <p>associations</p> </Link>
             <Link to="/login"> <p>login</p> <img className="loginIcon" src={require('./login_icon.svg')} /> </Link>
           </span>
-            <Route exact path="/schools" component={Schools} />
+            <Route path="/" />
+            <Route path="/schools" component={Schools} />
             <Route path="/companies" component={Companies} />
             <Route path="/associations" component={Associations} />
         </div>
