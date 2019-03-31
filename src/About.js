@@ -15,13 +15,13 @@ class About extends Component {
     return (
       <Row>
         <Col md="12">
-          <Card id="landing-row" style={{ backgroundColor: '#333', opacity: 0.8 }}>
+          <Card id="landing-row" style={{ backgroundColor: '#ECB7BE' }}>
             <CardBody>
               <CardText id="intro">
                 <Typing speed={1}>
-                  <p>Hi there, I'm Athena!</p>
+                  <p>Hi there, I'm athena!</p>
                   <Typing.Delay ms={500} />
-                  <p>I'm glad to know you're interested in the field of computing.</p>
+                  <p>I'm glad to know you're interested in the computing industry.</p>
                   <Typing.Delay ms={500} />
                   <p>It is my duty to provide you with all the information you need to
                   make the right career decisions!</p>

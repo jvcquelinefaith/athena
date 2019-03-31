@@ -3,6 +3,7 @@ import { Container, Row, Col, Collapse, Navbar, NavbarToggler,
   NavbarBrand, Nav, NavLink, NavItem, UncontrolledDropdown,
   DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
+import './App.css';
 import LandingItem from './LandingItem.js';
 import About from './About.js';
 
@@ -26,7 +27,7 @@ class App extends Component {
         <Container fluid>
           <header>
             <Navbar color="light" light expand="md">
-              <NavbarBrand href="/"> athena </NavbarBrand>
+              <NavbarBrand id="logo" href="/"> athena </NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>

@@ -13,29 +13,29 @@ class LandingItem extends Component {
     return (
       <Row id="landing-row">
         <Col xs="12" md="4">
-          <Card>
-            <CardImg top height="400vw" src={require('./student.jpg')} />
+          <Card style={{ backgroundColor: '#f8f4fe' }}>
+            <CardImg top src={require('./study.jpg')} />
             <CardBody>
               <CardText>I am in high school trying to decide what colleges and universities to apply to.</CardText>
-              <Button color="primary"> I'M LOOKING FOR A SCHOOL </Button>
+              <Button color="secondary" size="lg" block> I'M LOOKING FOR A SCHOOL </Button>
             </CardBody>
           </Card>
         </Col>
         <Col xs="12" md="4">
-          <Card>
-            <CardImg top height="400vw" src={require('./work.jpg')} />
+          <Card style={{ backgroundColor: '#f8f4fe' }}>
+            <CardImg top src={require('./worky.jpg')} />
             <CardBody>
               <CardText>I have been working and I am looking to make a change in my career.</CardText>
-              <Button color="primary"> I'M LOOKING FOR A JOB </Button>
+              <Button color="secondary" size="lg" block> I'M LOOKING FOR A JOB </Button>
             </CardBody>
           </Card>
         </Col>
         <Col xs="12" md="4">
-          <Card>
-            <CardImg top height="400vw" src={require('./group-w.jpg')} />
+          <Card style={{ backgroundColor: '#f8f4fe' }}>
+            <CardImg top src={require('./groupy.jpg')} />
             <CardBody>
               <CardText>I am looking for a mentor or a supportive network of women in computing.</CardText>
-              <Button color="primary">I'M LOOKING FOR SUPPORT </Button>
+              <Button ccolor="secondary" size="lg" block>I'M LOOKING FOR SUPPORT </Button>
             </CardBody>
           </Card>
         </Col>
