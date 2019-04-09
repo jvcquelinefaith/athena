@@ -1,0 +1,32 @@
+#landing-row p {
+  color: white;
+  font-family: "Hanken Grotesk Black";
+  font-size: 4vw;
+  padding-bottom: 25%;
+}
+
+#landing-row a {
+  font-family: "Hanken Grotesk";
+  font-size: 4vw;
+  padding-bottom: 5%;
+  color: white;
+}
+
+#landing-row a:hover {
+  text-decoration: underline;
+}
+
+#landing-row {
+  height: 90vh;
+}
+
+#categories {
+  padding: 5%;
+  background-color: #5D486D;
+}
+
+#side-img img {
+  padding: 5%;
+  height: 90vh;
+  width: 75vh;
+}

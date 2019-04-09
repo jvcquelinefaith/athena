@@ -1,0 +1,19 @@
+#logo {
+  font-size: 2em;
+  font-weight: 300;
+  font-family: "Futura";
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("fonts/HankenGrotesk-Regular.eot");
+  src:url("fonts/HankenGrotesk-Regular.woff")format("woff"),
+  url("fonts/HankenGrotesk-Regular.otf")format("opentype")
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Black";
+  src: url("fonts/HankenGrotesk-Black.eot");
+  src:url("fonts/HankenGrotesk-Black.woff")format("woff"),
+  url("fonts/HankenGrotesk-Black.otf")format("opentype")
+}

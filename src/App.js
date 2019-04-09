@@ -3,9 +3,10 @@ import { Container, Row, Col, Collapse, Navbar, NavbarToggler,
   NavbarBrand, Nav, NavLink, NavItem, UncontrolledDropdown,
   DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-import './App.css';
-import LandingItem from './LandingItem.js';
+import './css/App.css';
 import About from './About.js';
+import LandingItem from './LandingItem.js';
+import Brief from './Brief.js';
 
 class App extends Component {
   constructor(props) {
@@ -50,6 +51,7 @@ class App extends Component {
             </Navbar>
           </header>
           <About />
+          <Brief />
           <LandingItem />
         </Container>
       </div>

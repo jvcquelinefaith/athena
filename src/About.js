@@ -3,7 +3,7 @@ import { Col, Card, CardText, CardBody,
   CardTitle, Button, Row } from 'reactstrap';
 
 import Typing from 'react-typing-animation';
-import './About.css';
+import './css/About.css';
 
 class About extends Component {
   constructor(props) {
@@ -15,29 +15,13 @@ class About extends Component {
     return (
       <Row>
         <Col md="12">
-          <Card id="landing-row" style={{ backgroundColor: '#ECB7BE' }}>
-            <CardBody>
-              <CardText id="intro">
-                <Typing speed={1}>
-                  <p>Hi there, I'm athena!</p>
-                  <Typing.Delay ms={500} />
-                  <p>I'm glad to know you're interested in the computing industry.</p>
-                  <Typing.Delay ms={500} />
-                  <p>It is my duty to provide you with all the information you need to
-                  make the right career decisions!</p>
-                  <Typing.Delay ms={500} />
-                  <p>I provide information like how conducive the learning or
-                  working environments are, and the availability of mentorship
-                  and support organisations at these institutions!</p>
-                  <Typing.Delay ms={500} />
-                  <p>This is all to help you navigate the known obstacles in the computing
-                  industry, and ensure that you reach your maximum potential!</p>
-                  <Typing.Delay ms={500} />
-                  <p>Keep exploring the site to find out more!</p>
-                </Typing>
-              </CardText>
-            </CardBody>
-          </Card>
+          <div id="about-row" style={{ backgroundColor: 'black' }}>
+            <div id="about-text">
+            <Typing speed={2}>
+              <p>c:// hi, I'm athena_</p>
+            </Typing>
+            </div>
+          </div>
         </Col>
       </Row>
     );
