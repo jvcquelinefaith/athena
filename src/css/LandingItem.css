@@ -44,8 +44,9 @@
   }
 
   #side-img img {
-    padding: 5vh;
-    height: 40vh;
-    width: 35vh;
+    padding: 0;
+    height: 35vh;
+    width: 30vh;
+    overflow: hidden;
   }
 }

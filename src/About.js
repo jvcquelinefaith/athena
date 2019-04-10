@@ -29,7 +29,7 @@ class About extends Component {
           </p>
         </Col>
         <Col xs="4" md="3" id="second-small-descriptor">
-          <Button className="athena-primary-white"> Learn More </Button>
+          <Button id="about-button" className="athena-primary-white"> Learn More </Button>
         </Col>
       </Row>
     );

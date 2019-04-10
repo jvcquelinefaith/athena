@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "revision": "d0c18e1a4202d91cdd83",
-    "url": "/static/css/main.2601d946.chunk.css"
+    "revision": "69c16461942fe05f6441",
+    "url": "/static/css/main.2a0ad678.chunk.css"
   },
   {
-    "revision": "d0c18e1a4202d91cdd83",
-    "url": "/static/js/main.ed13ec61.chunk.js"
+    "revision": "69c16461942fe05f6441",
+    "url": "/static/js/main.5c540f82.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "0ba8e0ab7685c58e11c0",
+    "revision": "22f485790d1d7afdaa2f",
     "url": "/static/css/2.71d0fd76.chunk.css"
   },
   {
-    "revision": "0ba8e0ab7685c58e11c0",
-    "url": "/static/js/2.ccf214d7.chunk.js"
+    "revision": "22f485790d1d7afdaa2f",
+    "url": "/static/js/2.91b8a0d0.chunk.js"
   },
   {
     "revision": "8aa432c086261cbc74baf84062e6c6b9",
     "url": "/static/media/HankenGrotesk-Regular.8aa432c0.eot"
   },
   {
-    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
-    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
+    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
+    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
   },
   {
     "revision": "499224d62b17855e77ce16bc42743aaf",
     "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
-    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
-    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
+    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
+    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
   },
   {
     "revision": "9e8bb12f3324035305def0b40a99a390",
@@ -56,7 +56,11 @@ self.__precacheManifest = [
     "url": "/static/media/groupy.cddc79f5.jpg"
   },
   {
-    "revision": "8659d88971234112ae3679ea19d16a20",
+    "revision": "00886209452e23db7c3b1259f645c2c0",
+    "url": "/static/media/business-and-finance.00886209.png"
+  },
+  {
+    "revision": "12467821d59ee3a0bc8df4d5c39eca4a",
     "url": "/index.html"
   }
 ];
