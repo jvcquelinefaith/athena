@@ -53,8 +53,8 @@ class App extends Component {
             </Navbar>
           </header>
           <About />
-          <Brief />
           <LandingItem />
+          <Brief />
           <Banner />
       </Container>
     );

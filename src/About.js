@@ -14,22 +14,21 @@ class About extends Component {
   render() {
     return (
       <Row id="about-row">
-        <Col md="12">
-          <div id="about-text">
-            <Typing speed={2}>
-              <p>c:// hi, I'm athena_</p>
-            </Typing>
-          </div>
+        <Col md="12" id="about-text">
+          <Typing speed={2}>
+            <p>c:// hi, I'm athena_</p>
+          </Typing>
         </Col>
-        <Col md={{size:4, offset:3}} id="small-descriptor">
+        <Col xs={{ size: 6, offset: 1 }} md={{ size: 4, offset: 3 }} id="small-descriptor">
           <p>
-            athena is practical solution to increase
-            the number of women in computing by empowering
-            the existing population and making the field
-            more attractive to, and conducive for diversity.
+            athena is practical solution to increasing
+            the number of women in computing. It does this
+            by empowering the existing population, and
+            making the field more attractive to, and conducive
+            for diversity.
           </p>
         </Col>
-        <Col md="3" id="second-small-descriptor">
+        <Col xs="4" md="3" id="second-small-descriptor">
           <Button className="athena-primary-white"> Learn More </Button>
         </Col>
       </Row>

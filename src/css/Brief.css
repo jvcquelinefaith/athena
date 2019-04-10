@@ -1,9 +1,17 @@
+#brief-row {
+  max-height: 40vh;
+  background-color: #EBE8ED;
+}
+
 #text-description {
-  height: 50vh;
   color: black;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  #text-description {
+    padding-bottom: 0;
+  }
 }

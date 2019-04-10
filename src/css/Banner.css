@@ -1,9 +1,21 @@
 #ladder-text {
-  height: 90vh;
+  max-height: 90vh;
   padding: 10%;
 }
 
 #ladder-img {
-  height: 90vh;
+  max-height: 90vh;
   padding: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  #ladder-text {
+    max-height: 90vh;
+    padding: 5%;
+  }
+
+  #ladder-img {
+    height: 30vh;
+    padding: 5%;
+  }
 }

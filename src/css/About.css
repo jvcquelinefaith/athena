@@ -21,15 +21,29 @@
 
 #small-descriptor {
   border-right: solid 1px white;
-  display: inline;
-  height: 10vh;
-}
-
-#second-small-descriptor {
-  display: inline;
+  max-height: 10vh;
 }
 
 #small-descriptor p, #second-small-descriptor  p {
   font-size: 1vw;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  #about-row {
+    height: 40vh;
+  }
+
+  #about-text {
+    padding-top: 5%;
+  }
+
+  #small-descriptor {
+    height: 15vh;
+  }
+
+  #small-descriptor p, #second-small-descriptor  p {
+    font-size: 2vw;
+    color: white;
+  }
 }

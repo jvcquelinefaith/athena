@@ -10,15 +10,11 @@ class Banner extends Component {
   render() {
     return (
       <Row>
-        <Col md="6">
-          <div id="ladder-img">
-            <img src={require("./images/ladder.jpg")} />
-          </div>
+        <Col xs="4" md="6">
+          <img id="ladder-img" src={require("./images/ladder.jpg")} />
         </Col>
-        <Col md="6">
-          <div id="ladder-text">
-            <h1>the next step awaits you.</h1>
-          </div>
+        <Col xs="6" md="6" id="ladder-text">
+          <h1>the next step awaits you.</h1>
         </Col>
       </Row>
     );

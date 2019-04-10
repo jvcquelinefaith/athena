@@ -2,12 +2,15 @@
   color: white;
   font-family: "Hanken Grotesk Black";
   font-size: 4vw;
+  padding-top: 5%;
+  padding-left: 5%;
   padding-bottom: 25%;
 }
 
 #landing-row a {
   font-family: "Hanken Grotesk";
   font-size: 4vw;
+  padding-left: 5%;
   padding-bottom: 5%;
   color: white;
 }
@@ -17,16 +20,32 @@
 }
 
 #landing-row {
-  height: 90vh;
+  max-height: 95vh;
   background-color: #5D486D;
 }
 
 #categories {
-  padding-left: 5%;
+  background-color: #5D486D;
+}
+
+#side-img {
+  background-color: white;
 }
 
 #side-img img {
-  padding: 5%;
+  padding: 5vh;
   height: 90vh;
   width: 75vh;
+}
+
+@media screen and (max-width: 600px) {
+  #landing-row p {
+    padding-bottom: 0;
+  }
+
+  #side-img img {
+    padding: 5vh;
+    height: 40vh;
+    width: 35vh;
+  }
 }

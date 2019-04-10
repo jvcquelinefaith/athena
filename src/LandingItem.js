@@ -42,20 +42,16 @@ class LandingItem extends Component {
   render() {
     return (
       <Row id="landing-row">
-        <Col md="6">
-          <div id="categories">
-            <p>help whether you're looking for a...</p>
-            <a onMouseOver={this.handleStudyHover}>school</a>
-            <br/>
-            <a onMouseOver={this.handleCompanyHover}>company</a>
-            <br/>
-            <a onMouseOver={this.handleAssociationHover}>association</a>
-          </div>
+        <Col xs="6" md={{size: 5, offset: 1}} id="categories">
+          <p>whether you're looking for a...</p>
+          <a onMouseOver={this.handleStudyHover}>school</a>
+          <br/>
+          <a onMouseOver={this.handleCompanyHover}>company</a>
+          <br/>
+          <a onMouseOver={this.handleAssociationHover}>association</a>
         </Col>
-        <Col md="6">
-          <div id="side-img">
-            {this.imageRender()}
-          </div>
+        <Col xs="6" md="5" id="side-img">
+          {this.imageRender()}
         </Col>
       </Row>
     );
