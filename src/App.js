@@ -7,6 +7,9 @@ import './css/App.css';
 import About from './About.js';
 import LandingItem from './LandingItem.js';
 import Brief from './Brief.js';
+import Banner from './Banner.js';
+import Schools from './Schools.js';
+import Company from './Company.js';
 
 class App extends Component {
   constructor(props) {
@@ -24,8 +27,7 @@ class App extends Component {
 
   render() {
     return (
-      <div id="App">
-        <Container fluid>
+        <Container fluid id="App">
           <header>
             <Navbar color="light" light expand="md">
               <NavbarBrand id="logo" href="/"> athena </NavbarBrand>
@@ -34,7 +36,7 @@ class App extends Component {
                 <Nav className="ml-auto" navbar>
                   <NavItem>
                   </NavItem>
-                  <NavLink>
+                  <NavLink to="/schools">
                     schools
                   </NavLink>
                   <NavLink>
@@ -53,8 +55,8 @@ class App extends Component {
           <About />
           <Brief />
           <LandingItem />
-        </Container>
-      </div>
+          <Banner />
+      </Container>
     );
   }
 }

@@ -1,19 +1,9 @@
 #text-description {
-  height: 55vh;
+  height: 50vh;
   color: black;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-#text-description h2 {
-  font-family: "Hanken Grotesk Black";
-  font-size: 4vw;
-}
-
-#text-description p {
-  font-family: "Hanken Grotesk";
-  font-size: 3vw;
 }

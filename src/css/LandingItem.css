@@ -18,11 +18,11 @@
 
 #landing-row {
   height: 90vh;
+  background-color: #5D486D;
 }
 
 #categories {
-  padding: 5%;
-  background-color: #5D486D;
+  padding-left: 5%;
 }
 
 #side-img img {

@@ -13,15 +13,24 @@ class About extends Component {
 
   render() {
     return (
-      <Row>
+      <Row id="about-row">
         <Col md="12">
-          <div id="about-row" style={{ backgroundColor: 'black' }}>
-            <div id="about-text">
+          <div id="about-text">
             <Typing speed={2}>
               <p>c:// hi, I'm athena_</p>
             </Typing>
-            </div>
           </div>
+        </Col>
+        <Col md={{size:4, offset:3}} id="small-descriptor">
+          <p>
+            athena is practical solution to increase
+            the number of women in computing by empowering
+            the existing population and making the field
+            more attractive to, and conducive for diversity.
+          </p>
+        </Col>
+        <Col md="3" id="second-small-descriptor">
+          <Button className="athena-primary-white"> Learn More </Button>
         </Col>
       </Row>
     );

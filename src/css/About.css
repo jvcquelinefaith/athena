@@ -12,4 +12,24 @@
 
 #about-row {
   height: 90vh;
+  background-color: black;
+}
+
+#about-button {
+  margin-left: 44%;
+}
+
+#small-descriptor {
+  border-right: solid 1px white;
+  display: inline;
+  height: 10vh;
+}
+
+#second-small-descriptor {
+  display: inline;
+}
+
+#small-descriptor p, #second-small-descriptor  p {
+  font-size: 1vw;
+  color: white;
 }
