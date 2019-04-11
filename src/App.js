@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Collapse, Navbar, NavbarToggler,
-  NavbarBrand, Nav, NavLink, NavItem, UncontrolledDropdown,
-  DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+  NavbarBrand, Nav, NavLink, NavItem } from 'reactstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 

@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import { Col, Button, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import './css/Brief.css';
 
 class Brief extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Row id="brief-row">

@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import { Col, Card, CardText, CardBody,
-  CardTitle, Button, Row } from 'reactstrap';
+import { Col, Button, Row } from 'reactstrap';
 
 import Typing from 'react-typing-animation';
 import './css/About.css';
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
   render() {
     return (
       <Row id="about-row">

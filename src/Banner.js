@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import { Col, Button, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import './css/Banner.css';
 
 class Banner extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Row id="banner-row">
