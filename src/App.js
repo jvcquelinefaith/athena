@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Collapse, Navbar, NavbarToggler,
   NavbarBrand, Nav, NavLink, NavItem, UncontrolledDropdown,
   DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 
 import './css/App.css';
-import About from './About.js';
-import LandingItem from './LandingItem.js';
-import Brief from './Brief.js';
-import Banner from './Banner.js';
-import Schools from './Schools.js';
-import Company from './Company.js';
+import Home from './Home.js';
+import Schools from './pages/Schools.js';
+import Company from './pages/Company.js';
 
 class App extends Component {
   constructor(props) {
@@ -27,36 +26,37 @@ class App extends Component {
 
   render() {
     return (
-        <Container fluid id="App">
-          <header>
-            <Navbar color="light" light expand="md">
-              <NavbarBrand id="logo" href="/"> athena </NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />
-              <Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="ml-auto" navbar>
-                  <NavItem>
-                  </NavItem>
-                  <NavLink to="/schools">
-                    schools
-                  </NavLink>
-                  <NavLink>
-                    companies
-                  </NavLink>
-                  <NavLink>
-                    associations
-                  </NavLink>
-                  <NavLink>
-                    login
-                  </NavLink>
-                </Nav>
-              </Collapse>
-            </Navbar>
-          </header>
-          <About />
-          <LandingItem />
-          <Brief />
-          <Banner />
-      </Container>
+        <Router>
+          <Container fluid id="App">
+            <header>
+              <Navbar color="light" light expand="md">
+                <NavbarBrand id="logo" href="/"> athena </NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                  <Nav className="ml-auto" navbar>
+                    <NavItem>
+                    </NavItem>
+                    <NavLink to="/schools" href="/schools">
+                      schools
+                    </NavLink>
+                    <NavLink to="/company" href="/company">
+                      companies
+                    </NavLink>
+                    <NavLink>
+                      associations
+                    </NavLink>
+                    <NavLink>
+                      login
+                    </NavLink>
+                  </Nav>
+                </Collapse>
+              </Navbar>
+            </header>
+            <Route path="/" exact component={Home} />
+            <Route path="/schools" component={Schools} />
+            <Route path="/companies" component={Company} />
+        </Container>
+      </Router>
     );
   }
 }

@@ -1,0 +1,24 @@
+.athena-small-widget {
+  height: 40vh;
+  background: url("../images/rit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: black;
+}
+
+#card-body {
+  margin-top: 25vh;
+  height: 5vh;
+  color: white;
+  background: rgba(154, 141, 164, 0.8);
+}
+
+.athena-small-widget p {
+  font-size: 1vw;
+}
+
+.athena-small-widget h3 {
+  font-size: 1.5vw;
+  height: 3vw;
+}

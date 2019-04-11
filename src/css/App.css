@@ -17,3 +17,10 @@
   src:url("fonts/HankenGrotesk-Black.woff")format("woff"),
   url("fonts/HankenGrotesk-Black.otf")format("opentype")
 }
+
+@font-face {
+  font-family: "Hanken Grotesk Medium";
+  src: url("fonts/HankenGrotesk-Medium.eot");
+  src:url("fonts/HankenGrotesk-Medium.woff")format("woff"),
+  url("fonts/HankenGrotesk-Medium.otf")format("opentype")
+}

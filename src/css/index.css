@@ -26,31 +26,36 @@ h2 {
   font-size: 3vw;
 }
 
+h3 {
+  font-family: "Hanken Grotesk Black";
+  font-size: 2.5vw;
+}
+
 p {
   font-family: "Hanken Grotesk";
   font-size: 2vw;
 }
 
 .athena-primary {
-  font-family: "Hanken Grotesk Black";
+  font-family: "Hanken Grotesk Medium";
   background-color: black;
   border: none;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 1.5vw;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .athena-primary-white {
-  font-family: "Hanken Grotesk Black";
+  font-family: "Hanken Grotesk Medium";
   background-color: white;
   border: none;
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 1.5vw;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
