@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './css/App.css';
 import Home from './Home.js';
 import Schools from './pages/Schools.js';
-import Company from './pages/Company.js';
+import Companies from './pages/Companies.js';
 
 class App extends Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class App extends Component {
                     <NavLink to="/schools" href="/schools">
                       schools
                     </NavLink>
-                    <NavLink to="/companies">
+                    <NavLink to="/companies" href="/companies">
                       companies
                     </NavLink>
                     <NavLink>
@@ -53,7 +53,7 @@ class App extends Component {
             </header>
             <Route path="/" exact component={Home} />
             <Route path="/schools" component={Schools} />
-            <Route path="/companies" component={Company} />
+            <Route path="/companies" component={Companies} />
         </Container>
       </Router>
     );

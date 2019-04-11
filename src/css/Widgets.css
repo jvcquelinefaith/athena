@@ -8,19 +8,19 @@
 }
 
 #card-body {
-  margin-top: 25vh;
+  margin-top: 20vh;
   height: 10vh;
   color: white;
-  background: rgba(154, 141, 164, 0.8);
+  background: rgba(154, 141, 164, 0.9);
 }
 
 .athena-small-widget p {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 .athena-small-widget h3 {
+  padding-top: 1%;
   font-size: 1.5vw;
-  height: 3vw;
 }
 
 .ranking-badge {

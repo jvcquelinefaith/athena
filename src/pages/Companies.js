@@ -3,7 +3,7 @@ import { Col, Button, Row } from 'reactstrap';
 import '../css/Banner.css';
 import SmallWidget from '../widgets/SmallWidget.js';
 
-class Schools extends Component {
+class Companies extends Component {
   constructor(props) {
     super(props);
   }
@@ -11,27 +11,27 @@ class Schools extends Component {
   renderSmallWidgets() {
     this.props = [
       {
-        title: 'Rochester Institute of Technology',
-        text: 'Yeah, super bad example of inclusion',
-        image: require("../images/rit.png"),
+        title: 'Google',
+        text: 'They\'re more careful now that their stats have been published',
+        image: require("../images/google.png"),
         ranking: 1
       },
       {
-        title: 'Harvard University',
-        text: 'Kinda okay example of inclusion',
-        image: require("../images/harvard.png"),
+        title: 'Facebook',
+        text: 'Sheryll Sandberg did wonders for their rep lol',
+        image: require("../images/facebook.png"),
         ranking: 2
       },
       {
-        title: 'University of Southern California',
-        text: 'Maybe but I really have no idea',
-        image: require("../images/usc.png"),
+        title: 'Apple',
+        text: 'They seem pretty neutral. Maybe they have more female designers',
+        image: require("../images/apple.png"),
         ranking: 3
       },
       {
-        title: 'Pennsylvania State University',
-        text: 'Way too bro for my taste personally',
-        image: require("../images/penn.png"),
+        title: 'Amazon',
+        text: 'This place is apparently a hell-hole.',
+        image: require("../images/amazon.jpg"),
         ranking: 4
       }
     ];
@@ -56,4 +56,4 @@ class Schools extends Component {
   }
 }
 
-export default Schools;
+export default Companies;
