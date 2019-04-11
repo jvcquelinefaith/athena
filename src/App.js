@@ -38,7 +38,7 @@ class App extends Component {
                     <NavLink to="/schools" href="/schools">
                       schools
                     </NavLink>
-                    <NavLink to="/company" href="/company">
+                    <NavLink to="/companies">
                       companies
                     </NavLink>
                     <NavLink>
