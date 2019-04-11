@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody,
+  CardTitle, Button, Badge } from 'reactstrap';
 import '../css/SmallWidgets.css';
 
   class SmallSchoolWidget extends Component {
@@ -16,7 +16,12 @@ import '../css/SmallWidgets.css';
     return (
       <Card className="athena-small-widget" style={style}>
         <CardBody id="card-body">
-          <CardTitle><h3>{this.props.title}</h3></CardTitle>
+          <Badge className="ranking-badge">#{this.props.ranking}</Badge>
+          <CardTitle>
+            <h3>
+              {this.props.title}
+            </h3>
+          </CardTitle>
           <CardText><p>{this.props.text}</p></CardText>
         </CardBody>
       </Card>
