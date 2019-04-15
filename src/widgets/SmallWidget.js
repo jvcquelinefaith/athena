@@ -7,8 +7,9 @@ import ExpandedWidget from './ExpandedWidget.js';
   class SmallWidget extends Component {
   constructor(props) {
     super(props);
+    let widgetProps = props;
     this.state = {
-      hidden: true,
+      hidden: false,
       modal: false
     };
     this.setVisible = this.setVisible.bind(this);
@@ -36,6 +37,7 @@ import ExpandedWidget from './ExpandedWidget.js';
 
   renderModal() {
     this.props = {
+    ...this.props,
      modal: this.state.modal,
      toggle: this.toggle
    };
@@ -50,8 +52,8 @@ import ExpandedWidget from './ExpandedWidget.js';
       <div>
         <Card className="athena-small-widget"
               style={style}
-              onMouseOver={this.setVisible}
-              onMouseOut={this.setInvisible}
+              onMouseOver={this.setInvisible}
+              onMouseOut={this.setVisible}
               onClick={this.toggle}>
           <CardBody id="card-body" hidden={this.state.hidden}>
             <Badge className="ranking-badge">#{this.props.ranking}</Badge>

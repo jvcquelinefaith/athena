@@ -39,7 +39,7 @@ class Schools extends Component {
     let widgets = [];
     for (var i = 0; i < this.props.length; i ++) {
       widgets.push (
-        <Col md="3">
+        <Col xs="6" md="3">
           <SmallWidget {...this.props[i]}/>
         </Col>
       );

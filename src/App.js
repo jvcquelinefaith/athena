@@ -8,6 +8,7 @@ import './css/App.css';
 import Home from './Home.js';
 import Schools from './pages/Schools.js';
 import Companies from './pages/Companies.js';
+import Login from './pages/Login.js';
 
 class App extends Component {
   constructor(props) {
@@ -44,7 +45,7 @@ class App extends Component {
                     <NavLink>
                       associations
                     </NavLink>
-                    <NavLink>
+                    <NavLink to="/login" href="/login">
                       login
                     </NavLink>
                   </Nav>
@@ -54,6 +55,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/schools" component={Schools} />
             <Route path="/companies" component={Companies} />
+            <Route path="/login" component={Login} />
         </Container>
       </Router>
     );

@@ -1,39 +1,43 @@
 self.__precacheManifest = [
   {
-    "revision": "e4936759b0ce19ae148c",
-    "url": "/static/css/main.2aac696c.chunk.css"
+    "revision": "69ecacbfc03962736cb3",
+    "url": "/static/css/main.4c59d50e.chunk.css"
   },
   {
-    "revision": "e4936759b0ce19ae148c",
-    "url": "/static/js/main.ff32b631.chunk.js"
+    "revision": "69ecacbfc03962736cb3",
+    "url": "/static/js/main.dd37394b.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "2979ab1dddc895036720",
+    "revision": "ec9140f5324fe7b7bb03",
     "url": "/static/css/2.71d0fd76.chunk.css"
   },
   {
-    "revision": "2979ab1dddc895036720",
-    "url": "/static/js/2.78564024.chunk.js"
+    "revision": "ec9140f5324fe7b7bb03",
+    "url": "/static/js/2.e490cc65.chunk.js"
+  },
+  {
+    "revision": "99ccfd661facbfcc1dc510fc27233fa6",
+    "url": "/static/media/rit.99ccfd66.png"
   },
   {
     "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
     "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
   },
   {
-    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
-    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
+    "revision": "8aa432c086261cbc74baf84062e6c6b9",
+    "url": "/static/media/HankenGrotesk-Regular.8aa432c0.eot"
   },
   {
     "revision": "499224d62b17855e77ce16bc42743aaf",
     "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
-    "revision": "8aa432c086261cbc74baf84062e6c6b9",
-    "url": "/static/media/HankenGrotesk-Regular.8aa432c0.eot"
+    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
+    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
   },
   {
     "revision": "11157450dfe95f78b9913247b590125b",
@@ -44,12 +48,12 @@ self.__precacheManifest = [
     "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
   },
   {
-    "revision": "9e8bb12f3324035305def0b40a99a390",
-    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
-  },
-  {
     "revision": "616709b89e6ede82f6e0ff78340ce9e5",
     "url": "/static/media/HankenGrotesk-Black.616709b8.otf"
+  },
+  {
+    "revision": "9e8bb12f3324035305def0b40a99a390",
+    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
   },
   {
     "revision": "15c02b419e20a4dab2cc3316aacddd7b",
@@ -72,10 +76,6 @@ self.__precacheManifest = [
     "url": "/static/media/business-and-finance.00886209.png"
   },
   {
-    "revision": "99ccfd661facbfcc1dc510fc27233fa6",
-    "url": "/static/media/rit.99ccfd66.png"
-  },
-  {
     "revision": "78118930469c7fc2168ad6758a00b699",
     "url": "/static/media/harvard.78118930.png"
   },
@@ -88,7 +88,19 @@ self.__precacheManifest = [
     "url": "/static/media/penn.7638520e.png"
   },
   {
-    "revision": "1d2ae0167d2fad2eb4d6be4c1b6d46a3",
+    "revision": "a6adc178386d8805dc4250a37084e455",
+    "url": "/static/media/google.a6adc178.png"
+  },
+  {
+    "revision": "e6a90ddea624f5843396361940cf042e",
+    "url": "/static/media/apple.e6a90dde.png"
+  },
+  {
+    "revision": "7967c876fc5f1c55a6fd05f048635924",
+    "url": "/static/media/amazon.7967c876.jpg"
+  },
+  {
+    "revision": "27e240610ad968888f7de54797646189",
     "url": "/index.html"
   }
 ];
