@@ -1,5 +1,25 @@
-.login {
+.sign-up, .sign-in {
   margin-top: 5%;
-  border: solid 1px #5D486D;
+  border: solid 1px black;
   padding: 2%;
+}
+
+Form {
+  font-family: "Hanken Grotesk";
+}
+
+Form p {
+  font-family: "Hanken Grotesk";
+  font-size: 0.8em;
+  color: red;
+}
+
+.sign-up h5, .sign-in h5 {
+  font-family: "Hanken Grotesk";
+  font-size: 0.8em;
+  padding: 1%;
+}
+
+Form .athena-primary {
+  margin-right: 2%;
 }

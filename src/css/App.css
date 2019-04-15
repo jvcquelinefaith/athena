@@ -1,7 +1,18 @@
 #logo {
   font-size: 2em;
-  font-weight: 300;
-  font-family: "Futura";
+  font-family: "Hanken Grotesk Black";
+  color: #5D486D;
+}
+
+#athena-nav p {
+  font-family: "Hanken Grotesk";
+  color: black;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+#athena-nav {
+  height: 10vh;
 }
 
 @font-face {

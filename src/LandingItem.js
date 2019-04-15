@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'reactstrap';
 import './css/LandingItem.css';
+import * as ROUTES from './constants/routes.js';
 
 class LandingItem extends Component {
   constructor(props) {
@@ -43,9 +44,9 @@ class LandingItem extends Component {
       <Row id="landing-row">
         <Col xs="6" md={{size: 5, offset: 1}} id="categories">
           <p>whether you're looking for a...</p>
-          <a onMouseOver={this.handleStudyHover} href="/schools">school</a>
+          <a onMouseOver={this.handleStudyHover} href={ROUTES.SCHOOLS}>school</a>
           <br/>
-          <a onMouseOver={this.handleCompanyHover} href="/companies">company</a>
+          <a onMouseOver={this.handleCompanyHover} href={ROUTES.COMPANIES}>company</a>
           <br/>
           <a onMouseOver={this.handleAssociationHover}>association</a>
         </Col>
