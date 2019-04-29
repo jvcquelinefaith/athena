@@ -4,7 +4,7 @@ import { Container, Row, Col, Collapse, Navbar, NavbarToggler,
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
-import './css/App.css';
+import './css/Navigation.css';
 import Home from './Home.js';
 import Schools from './pages/Schools.js';
 import Companies from './pages/Companies.js';
@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
         <Router>
-          <Navbar id="athena-nav" sticky="top" expand="md">
+          <Navbar id="athena-nav" expand="md">
             <NavbarBrand id="logo" href="/">athena</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>

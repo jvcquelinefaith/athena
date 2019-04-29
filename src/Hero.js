@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Col, Button, Row } from 'reactstrap';
 
 import Typing from 'react-typing-animation';
-import './css/About.css';
+import './css/Hero.css';
 
-class About extends Component {
+class Hero extends Component {
   render() {
     return (
       <Row id="about-row">
@@ -16,7 +16,7 @@ class About extends Component {
           </p>
           <Button>Learn More</Button>
         </Col>
-        <Col md="4">
+        <Col md="3">
           <img id="athena-hero" src={require("./images/athena-hero.svg")}/>
         </Col>
       </Row>
@@ -24,4 +24,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Hero;

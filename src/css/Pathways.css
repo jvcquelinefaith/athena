@@ -1,0 +1,33 @@
+#pathways-row {
+  background-color: white;
+  width: 100%;
+  padding-top: 2vh;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  padding-bottom: 5vh;
+}
+
+#pathways-header {
+  text-align: center;
+}
+
+#pathways-row img {
+  padding: 2vw;
+}
+
+#path-cards p {
+  font-size: 0.9em;
+}
+
+#path-cards {
+  padding-top: 5vh;
+  padding-left: 10vw;
+}
+
+#path-card {
+  height: 70vh;
+  width: 20vw;
+  border: 1px solid #F3EAFD;
+  box-shadow: 0 0 15px 0 #F3EAFD;
+  margin-right: 2vw;
+}

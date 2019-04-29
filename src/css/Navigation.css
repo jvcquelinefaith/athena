@@ -1,19 +1,19 @@
 #logo {
   font-size: 1.5em;
   font-family: "Hanken Grotesk Black";
-  color: #5D486D;
 }
 
 #athena-nav p, a {
-  font-family: "Hanken Grotesk Black";
+  font-family: "Hanken Grotesk";
   color: black;
   font-size: 1em;
 }
 
 #athena-nav {
-  margin-top: 2vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #F3EAFD;
 }
 
 @font-face {

@@ -1,0 +1,91 @@
+import React, { Component } from 'react';
+import { Col, Row, Card, CardImg, CardText, CardBody,
+  CardTitle, Button } from 'reactstrap';
+import './css/Pathways.css';
+import * as ROUTES from './constants/routes.js';
+
+class Pathways extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      study: false,
+      company: false,
+      association: false
+    };
+    this.imageRender = this.imageRender.bind(this);
+    this.handleStudyHover = this.handleStudyHover.bind(this);
+    this.handleCompanyHover = this.handleCompanyHover.bind(this);
+    this.handleAssociationHover = this.handleAssociationHover.bind(this);
+  }
+
+  handleStudyHover() {
+    this.setState({study: true, company: false, association: false});
+  }
+
+  handleCompanyHover() {
+    this.setState({study: false, company: true, association: false});
+  }
+
+  handleAssociationHover() {
+    this.setState({study: false, company: false, association: true});
+  }
+
+  imageRender() {
+    if (this.state.study) {
+      return
+    } else if (this.state.company) {
+      return
+    } else {
+      return
+    }
+  }
+
+  render() {
+    return (
+      <Row id="pathways-row">
+        <Col md="12" id="pathways-header">
+          <h1>select your path</h1>
+          <p>The paths below have been paved
+          with career-making key <br/> factors.
+          Keep exploring to learn more.</p>
+        </Col>
+        <Row id="path-cards">
+            <Card id="path-card">
+              <CardImg src={require("./images/athena-assoc.svg")}/>
+              <CardBody>
+                <CardTitle><h3>Associations</h3></CardTitle>
+                <CardText><p>Learn about the various initiatives
+                for WIC that can provide
+                that boost your
+                career needs!</p>
+                </CardText>
+                <Button>Learn More</Button>
+              </CardBody>
+            </Card>
+            <Card id="path-card">
+              <CardImg src={require("./images/athena-companies.svg")}/>
+              <CardBody>
+                <CardTitle><h3>Companies</h3></CardTitle>
+                <CardText><p>Learn about the leading companies
+                in tech that are making positive changes for WIC!</p>
+                </CardText>
+                <Button>Learn More</Button>
+              </CardBody>
+            </Card>
+            <Card id="path-card">
+              <CardImg src={require("./images/athena-schools.svg")}/>
+              <CardBody>
+                <CardTitle><h3>Schools</h3></CardTitle>
+                <CardText><p>Learn about the schools taking radical
+                strides for diversity and inclusion in CS education!</p>
+                </CardText>
+                <Button>Learn More</Button>
+              </CardBody>
+            </Card>
+        </Row>
+      </Row>
+    );
+  }
+}
+
+export default Pathways;

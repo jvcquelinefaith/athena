@@ -1,9 +1,9 @@
-
 #about-row {
-  height: 90vh;
-  background-color: white;
-  margin-left: 11vw;
-  margin-right: 12vw;
+  height: 85vh;
+  background-color: #F3EAFD;
+  width: 100%;
+  padding-left: 11vw;
+  padding-right: 11vw;
 }
 
 #about-h {

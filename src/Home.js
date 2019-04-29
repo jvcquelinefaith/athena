@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Row } from 'reactstrap';
 
-import About from './About.js';
-import LandingItem from './LandingItem.js';
-import Brief from './Brief.js';
-import Banner from './Banner.js';
+import Hero from './Hero.js';
+import Pathways from './Pathways.js';
+import Stats from './Stats.js';
 
 class Home extends Component {
   constructor(props) {
@@ -14,10 +13,9 @@ class Home extends Component {
   render() {
     return (
       <Row>
-        <About />
-        <LandingItem />
-        <Brief />
-        <Banner />
+        <Hero />
+        <Pathways />
+        <Stats />
       </Row>
     );
   }

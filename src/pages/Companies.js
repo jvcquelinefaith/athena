@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Button, Row } from 'reactstrap';
-import '../css/Banner.css';
+import '../css/Stats.css';
 import SmallWidget from '../widgets/SmallWidget.js';
 
 class Companies extends Component {
