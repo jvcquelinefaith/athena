@@ -8,22 +8,16 @@ class About extends Component {
   render() {
     return (
       <Row id="about-row">
-        <Col md="12" id="about-text">
-          <Typing speed={2}>
-            <p>c:// hi, I'm athena_</p>
-          </Typing>
-        </Col>
-        <Col xs={{ size: 6, offset: 1 }} md={{ size: 4, offset: 3 }} id="small-descriptor">
-          <p>
-            athena is practical solution to increasing
-            the number of women in computing. It does this
-            by empowering the existing population, and
-            making the field more attractive to, and conducive
-            for diversity.
+        <Col md="6" id="about-h">
+          <h1>Empowering Women in Computing</h1>
+          <p>Ready to take the next step in your <br/>
+            career ladder? Athena is here <br/>
+            to help.
           </p>
+          <Button>Learn More</Button>
         </Col>
-        <Col xs="4" md="3" id="second-small-descriptor">
-          <Button id="about-button" className="athena-primary-white"> Learn More </Button>
+        <Col md="4">
+          <img id="athena-hero" src={require("./images/athena-hero.svg")}/>
         </Col>
       </Row>
     );

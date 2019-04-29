@@ -1,18 +1,17 @@
-#about-text p {
-  font-family: "Hanken Grotesk";
-  font-size: 8vw;
-  font-weight: bold;
-  color: #ae87cd;
-  text-align: center;
-}
-
-#about-text {
-  padding-top: 15%;
-}
 
 #about-row {
   height: 90vh;
-  background-color: black;
+  background-color: white;
+  margin-left: 11vw;
+  margin-right: 12vw;
+}
+
+#about-h {
+  margin-top: 20vh;
+}
+
+#athena-hero {
+  margin-top: 10vh;
 }
 
 #small-descriptor {
