@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Button, Row } from 'reactstrap';
-import '../css/Stats.css';
+import '../css/Widgets.css';
 import SmallWidget from '../widgets/SmallWidget.js';
 
 class Companies extends Component {
@@ -50,7 +50,8 @@ class Companies extends Component {
   render() {
     return (
       <Row>
-        {this.renderSmallWidgets()}
+        <Col md="12" id="company-header"><h1>companies</h1></Col>
+        <Row id="company-row">{this.renderSmallWidgets()}</Row>
       </Row>
     );
   }

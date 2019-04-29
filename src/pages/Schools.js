@@ -50,7 +50,8 @@ class Schools extends Component {
   render() {
     return (
       <Row>
-        {this.renderSmallWidgets()}
+        <Col md="12" id="school-header"><h1>schools</h1></Col>
+        <Row id="school-row">{this.renderSmallWidgets()}</Row>
       </Row>
 
     );

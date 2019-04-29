@@ -4,6 +4,7 @@ import { Row } from 'reactstrap';
 import Hero from './Hero.js';
 import Pathways from './Pathways.js';
 import Stats from './Stats.js';
+import Footer from './Footer.js';
 
 class Home extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Home extends Component {
         <Hero />
         <Pathways />
         <Stats />
+        <Footer />
       </Row>
     );
   }

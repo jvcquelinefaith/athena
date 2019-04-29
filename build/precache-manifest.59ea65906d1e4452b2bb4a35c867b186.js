@@ -1,31 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "0b3f07edab1dbb8c1f51",
-    "url": "/static/css/main.7a0b8f55.chunk.css"
+    "revision": "7ecd59f3ab12734ee9dc",
+    "url": "/static/css/main.2c0e64c3.chunk.css"
   },
   {
-    "revision": "0b3f07edab1dbb8c1f51",
-    "url": "/static/js/main.44098871.chunk.js"
+    "revision": "7ecd59f3ab12734ee9dc",
+    "url": "/static/js/main.982919d5.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "e3f1b414972ad1b79ca3",
-    "url": "/static/css/2.71d0fd76.chunk.css"
+    "revision": "e4993feb85f6cd247d9f",
+    "url": "/static/css/2.4811f0a3.chunk.css"
   },
   {
-    "revision": "e3f1b414972ad1b79ca3",
-    "url": "/static/js/2.f3271a15.chunk.js"
+    "revision": "e4993feb85f6cd247d9f",
+    "url": "/static/js/2.ac49d30c.chunk.js"
   },
   {
     "revision": "99ccfd661facbfcc1dc510fc27233fa6",
     "url": "/static/media/rit.99ccfd66.png"
-  },
-  {
-    "revision": "499224d62b17855e77ce16bc42743aaf",
-    "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
     "revision": "8aa432c086261cbc74baf84062e6c6b9",
@@ -36,44 +32,52 @@ self.__precacheManifest = [
     "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
   },
   {
-    "revision": "11157450dfe95f78b9913247b590125b",
-    "url": "/static/media/HankenGrotesk-Medium.11157450.eot"
+    "revision": "499224d62b17855e77ce16bc42743aaf",
+    "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
     "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
     "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
   },
   {
-    "revision": "7ed163a63c0d38f106433ec9059eb947",
-    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
+    "revision": "11157450dfe95f78b9913247b590125b",
+    "url": "/static/media/HankenGrotesk-Medium.11157450.eot"
   },
   {
-    "revision": "9e8bb12f3324035305def0b40a99a390",
-    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
+    "revision": "7ed163a63c0d38f106433ec9059eb947",
+    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
   },
   {
     "revision": "616709b89e6ede82f6e0ff78340ce9e5",
     "url": "/static/media/HankenGrotesk-Black.616709b8.otf"
   },
   {
+    "revision": "9e8bb12f3324035305def0b40a99a390",
+    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
+  },
+  {
     "revision": "15c02b419e20a4dab2cc3316aacddd7b",
     "url": "/static/media/HankenGrotesk-Medium.15c02b41.otf"
   },
   {
-    "revision": "81e7cafe86d41396310d5647886aafac",
-    "url": "/static/media/female-graduate-student.81e7cafe.png"
+    "revision": "12edf67b7d320527afd9f462cbb4126e",
+    "url": "/static/media/athena-hero.12edf67b.svg"
   },
   {
-    "revision": "62638837904c8420ad433a40009959db",
-    "url": "/static/media/party.62638837.png"
+    "revision": "cb853b77fa2a5bbadf5322fe2f99c303",
+    "url": "/static/media/athena-assoc.cb853b77.svg"
   },
   {
-    "revision": "4f701914b83fa28b840d707880059d69",
-    "url": "/static/media/collaboration.4f701914.png"
+    "revision": "fdaeb09c44f59130d75f8ebf51052085",
+    "url": "/static/media/athena-companies.fdaeb09c.svg"
   },
   {
-    "revision": "e83f27159bd83a726ff645d1d1e1e3b4",
-    "url": "/static/media/business-and-finance.e83f2715.png"
+    "revision": "074d5f991d9862e51757815ace14583e",
+    "url": "/static/media/athena-schools.074d5f99.svg"
+  },
+  {
+    "revision": "33decf64d4ddff0bc157906ab12f5ce1",
+    "url": "/static/media/athena-stats.33decf64.svg"
   },
   {
     "revision": "78118930469c7fc2168ad6758a00b699",
@@ -100,7 +104,7 @@ self.__precacheManifest = [
     "url": "/static/media/amazon.7967c876.jpg"
   },
   {
-    "revision": "2ece559b7eb9d7b011e9c23370244ee1",
+    "revision": "61dd69574171b701d20076b9c0a92c56",
     "url": "/index.html"
   }
 ];

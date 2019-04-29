@@ -1,0 +1,13 @@
+#footer-row {
+  padding-top: 5vh;
+  padding-left: 11vw;
+  padding-right: 11vw;
+}
+
+#footer-row h4 {
+  font-size: 0.8em;
+}
+#footer-row p, ol {
+  font-size: 0.6em;
+  list-style-type: none;
+}

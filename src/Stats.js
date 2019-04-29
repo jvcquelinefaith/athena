@@ -13,10 +13,10 @@ class Stats extends Component {
           there’s stll hope.</p>
         </Col>
         <Col>
-          <div id="stats"></div>
+          <img id="stats-img" src={require("./images/athena-stats.svg")}/>
         </Col>
         <Col>
-          <img id="stats-img" src={require("./images/athena-stats.svg")}/>
+          <div id="stats"></div>
         </Col>
       </Row>
     );
