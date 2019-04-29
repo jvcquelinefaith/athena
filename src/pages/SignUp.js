@@ -4,7 +4,7 @@ import { compose } from 'recompose';
 import {
   Container, Col, Form, FormFeedback,
   FormGroup, Label, Input,
-  Button,
+  Button
 } from 'reactstrap';
 import * as ROUTES from '../constants/routes.js';
 import { withFirebase } from '../firebase';
@@ -14,6 +14,7 @@ const INITIAL_STATE = {
   username: '',
   email: '',
   password: '',
+  userId: '',
   error: null
 };
 
@@ -30,6 +31,7 @@ class SignUpFormBase extends Component {
      .doCreateUserWithEmailAndPassword(email, password)
      .then(authUser => {
        this.setState({ ...INITIAL_STATE });
+       this.setState({ userId: authUser })
        return this.props.firebase
           .user(authUser.user.uid)
           .set({
@@ -39,7 +41,7 @@ class SignUpFormBase extends Component {
      })
      .then(() => {
       this.setState({ ...INITIAL_STATE });
-      this.props.history.push(ROUTES.HOME);
+      this.props.history.push(ROUTES.USER_ENTRY);
      })
      .catch(error => {
        this.setState({ error });
@@ -65,7 +67,7 @@ class SignUpFormBase extends Component {
     return (
       <Col md={{ size: 6, offset: 3 }} className="sign-up">
         <h2>Sign Up</h2>
-        <h5>if you already have an account with us, click "<a href={ROUTES.SIGNIN}>sign in</a>"</h5>
+        <h5>if you already have an account with us, click "<a href={ROUTES.SIGN_IN}>sign in</a>"</h5>
         <Form className="form" onSubmit={this.onSubmit}>
           {error && <p invalid id="errorMessage">{error.message}</p>}
           <Col>

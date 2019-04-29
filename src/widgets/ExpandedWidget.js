@@ -20,42 +20,34 @@ class ExpandedWidget extends Component {
             <table className="modal-table">
               <tr>
                 <td className="no-border">
-                  <p>Speed of upward mobility</p>
-                  <Rating initialRating={5} stop={5} readonly/>
+                  <p>Speed of upward mobility<Rating initialRating={5} stop={5} readonly/></p>
                 </td>
                 <td>
-                  <p>Availability of mentorship</p>
-                  <Rating initialRating={4} stop={5} readonly/>
+                  <p>Availability of mentorship<Rating initialRating={4} stop={5} readonly/></p>
                 </td>
               </tr>
               <tr>
                 <td className="no-border">
-                  <p>Gender-inclusive culture</p>
-                  <Rating initialRating={4.5} stop={5} readonly/>
+                  <p>Gender-inclusive culture<Rating initialRating={4.5} stop={5} readonly/></p>
                 </td>
                 <td>
-                  <p>Focus on diversity and inclusion</p>
-                  <Rating initialRating={4} stop={5} readonly/>
+                  <p>Focus on diversity and inclusion<Rating initialRating={4} stop={5} readonly/></p>
                 </td>
               </tr>
               <tr>
                 <td className="no-border">
-                  <p>Wage disparity by gender</p>
-                  <Rating initialRating={4} stop={5} readonly/>
+                  <p>Wage disparity by gender<Rating initialRating={4} stop={5} readonly/></p>
                 </td>
                 <td>
-                  <p>Inclusive dress-code standards</p>
-                  <Rating initialRating={4.5} stop={5} readonly/>
+                  <p>Inclusive dress-code standards<Rating initialRating={4.5} stop={5} readonly/></p>
                 </td>
               </tr>
               <tr>
                 <td className="no-border">
-                  <p>Availability of initiatives for women</p>
-                  <Rating initialRating={4} stop={5} readonly/>
+                  <p>Availability of initiatives for women<Rating initialRating={4} stop={5} readonly/></p>
                 </td>
                 <td>
-                  <p>Current population of women</p>
-                  <Rating initialRating={4.5} stop={5} readonly/>
+                  <p>Current population of women<Rating initialRating={4.5} stop={5} readonly/></p>
                 </td>
               </tr>
             </table>

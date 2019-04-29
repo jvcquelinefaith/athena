@@ -1,39 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "69ecacbfc03962736cb3",
-    "url": "/static/css/main.4c59d50e.chunk.css"
+    "revision": "0b3f07edab1dbb8c1f51",
+    "url": "/static/css/main.7a0b8f55.chunk.css"
   },
   {
-    "revision": "69ecacbfc03962736cb3",
-    "url": "/static/js/main.dd37394b.chunk.js"
+    "revision": "0b3f07edab1dbb8c1f51",
+    "url": "/static/js/main.44098871.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "ec9140f5324fe7b7bb03",
+    "revision": "e3f1b414972ad1b79ca3",
     "url": "/static/css/2.71d0fd76.chunk.css"
   },
   {
-    "revision": "ec9140f5324fe7b7bb03",
-    "url": "/static/js/2.e490cc65.chunk.js"
+    "revision": "e3f1b414972ad1b79ca3",
+    "url": "/static/js/2.f3271a15.chunk.js"
   },
   {
     "revision": "99ccfd661facbfcc1dc510fc27233fa6",
     "url": "/static/media/rit.99ccfd66.png"
   },
   {
-    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
-    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
+    "revision": "499224d62b17855e77ce16bc42743aaf",
+    "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
     "revision": "8aa432c086261cbc74baf84062e6c6b9",
     "url": "/static/media/HankenGrotesk-Regular.8aa432c0.eot"
-  },
-  {
-    "revision": "499224d62b17855e77ce16bc42743aaf",
-    "url": "/static/media/HankenGrotesk-Black.499224d6.eot"
   },
   {
     "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
@@ -44,36 +40,40 @@ self.__precacheManifest = [
     "url": "/static/media/HankenGrotesk-Medium.11157450.eot"
   },
   {
-    "revision": "7ed163a63c0d38f106433ec9059eb947",
-    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
+    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
+    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
   },
   {
-    "revision": "616709b89e6ede82f6e0ff78340ce9e5",
-    "url": "/static/media/HankenGrotesk-Black.616709b8.otf"
+    "revision": "7ed163a63c0d38f106433ec9059eb947",
+    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
   },
   {
     "revision": "9e8bb12f3324035305def0b40a99a390",
     "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
   },
   {
+    "revision": "616709b89e6ede82f6e0ff78340ce9e5",
+    "url": "/static/media/HankenGrotesk-Black.616709b8.otf"
+  },
+  {
     "revision": "15c02b419e20a4dab2cc3316aacddd7b",
     "url": "/static/media/HankenGrotesk-Medium.15c02b41.otf"
   },
   {
-    "revision": "f46d4d44efb5eb0e442615813bd71510",
-    "url": "/static/media/study.f46d4d44.jpg"
+    "revision": "81e7cafe86d41396310d5647886aafac",
+    "url": "/static/media/female-graduate-student.81e7cafe.png"
   },
   {
-    "revision": "f1e6eb7cfe6596b729c4cc1419266788",
-    "url": "/static/media/worky.f1e6eb7c.jpg"
+    "revision": "62638837904c8420ad433a40009959db",
+    "url": "/static/media/party.62638837.png"
   },
   {
-    "revision": "cddc79f5d8fcaed02bfc911d3155abe8",
-    "url": "/static/media/groupy.cddc79f5.jpg"
+    "revision": "4f701914b83fa28b840d707880059d69",
+    "url": "/static/media/collaboration.4f701914.png"
   },
   {
-    "revision": "00886209452e23db7c3b1259f645c2c0",
-    "url": "/static/media/business-and-finance.00886209.png"
+    "revision": "e83f27159bd83a726ff645d1d1e1e3b4",
+    "url": "/static/media/business-and-finance.e83f2715.png"
   },
   {
     "revision": "78118930469c7fc2168ad6758a00b699",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/static/media/amazon.7967c876.jpg"
   },
   {
-    "revision": "27e240610ad968888f7de54797646189",
+    "revision": "2ece559b7eb9d7b011e9c23370244ee1",
     "url": "/index.html"
   }
 ];

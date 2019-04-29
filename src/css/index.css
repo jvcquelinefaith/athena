@@ -12,10 +12,6 @@ div, Button, .ranking-badge, Input {
   border-radius: 0 !important;
 }
 
-header {
-  font-size: 1.2rem;
-}
-
 h1 {
   font-family: "Hanken Grotesk Black";
   font-size: 7vw;
@@ -23,17 +19,17 @@ h1 {
 
 h2 {
   font-family: "Hanken Grotesk Black";
-  font-size: 3vw;
+  font-size: 2.5em;
 }
 
 h3 {
   font-family: "Hanken Grotesk Black";
-  font-size: 2.5vw;
+  font-size: 2em;
 }
 
 h5, p {
   font-family: "Hanken Grotesk";
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 .athena-primary {
@@ -43,7 +39,7 @@ h5, p {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.4em;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -55,7 +51,7 @@ h5, p {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.4em;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -67,7 +63,7 @@ h5, p {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.4em;
   padding-left: 10%;
   padding-right: 10%;
 }

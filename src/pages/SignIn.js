@@ -30,7 +30,7 @@ class SignInFormBase extends Component {
       .doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
+        this.props.history.push(ROUTES.USER_ENTRY);
       })
       .catch(error => {
         this.setState({ error });
@@ -51,7 +51,7 @@ class SignInFormBase extends Component {
     return (
       <Col md={{ size: 6, offset: 3 }} className="sign-in">
         <h2>Sign In</h2>
-        <h5>if you dont't have an account yet, click "<a href={ROUTES.SIGNUP}>sign up</a>"</h5>
+        <h5>if you dont't have an account yet, click "<a href={ROUTES.SIGN_UP}>sign up</a>"</h5>
         <Form className="form" onSubmit={this.onSubmit}>
           {error && <p>{error.message}</p>}
           <Col>

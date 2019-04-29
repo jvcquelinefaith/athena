@@ -31,18 +31,18 @@ class LandingItem extends Component {
 
   imageRender() {
     if (this.state.study) {
-      return <img src={require("./images/study.jpg")} />;
+      return <img src={require("./images/female-graduate-student.png")} />;
     } else if (this.state.company) {
-      return <img src={require("./images/worky.jpg")} />
-    } else {
       return <img src={require("./images/groupy.jpg")} />
+    } else {
+      return <img src={require("./images/collaboration.png")} />
     }
   }
 
   render() {
     return (
       <Row id="landing-row">
-        <Col xs="6" md={{size: 5, offset: 1}} id="categories">
+        <Col xs={{size: 5, offset: 1}} md={{size: 5, offset: 1}} id="categories">
           <p>whether you're looking for a...</p>
           <a onMouseOver={this.handleStudyHover} href={ROUTES.SCHOOLS}>school</a>
           <br/>
@@ -50,7 +50,7 @@ class LandingItem extends Component {
           <br/>
           <a onMouseOver={this.handleAssociationHover}>association</a>
         </Col>
-        <Col xs="6" md="5" id="side-img">
+        <Col xs="4" md="5" id="side-img">
           {this.imageRender()}
         </Col>
       </Row>

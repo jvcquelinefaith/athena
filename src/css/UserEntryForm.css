@@ -1,0 +1,24 @@
+.page-title {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.athena-form {
+  border: 0.5px solid grey;
+  padding: 5%;
+  margin-top: 2%;
+}
+
+.athena-radio {
+  display: inline-flex;
+  padding-left: 8%;
+}
+
+.rating-table {
+  padding-top: 5%
+}
+
+.athena-question {
+  font-weight: bolder;
+}

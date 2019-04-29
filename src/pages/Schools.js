@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Button, Row } from 'reactstrap';
-import '../css/Banner.css';
 import SmallWidget from '../widgets/SmallWidget.js';
+import '../css/Widgets.css';
 
 class Schools extends Component {
   constructor(props) {
@@ -52,6 +52,7 @@ class Schools extends Component {
       <Row>
         {this.renderSmallWidgets()}
       </Row>
+
     );
   }
 }

@@ -10,6 +10,7 @@ import Schools from './pages/Schools.js';
 import Companies from './pages/Companies.js';
 import SignUp from './pages/SignUp.js';
 import SignIn from './pages/SignIn.js';
+import UserEntryForm from './pages/UserEntryForm.js';
 
 import * as ROUTES from './constants/routes.js';
 
@@ -30,40 +31,36 @@ class App extends Component {
   render() {
     return (
         <Router>
-          <Navbar id="athena-nav" sticky="top" color="light" light expand="md">
+          <Navbar id="athena-nav" sticky="top" expand="md">
             <NavbarBrand id="logo" href="/">athena</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem className="navbar-text">
-                  <NavLink to="/schools" href="/schools">
-                    <p>schools</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem className="navbar-text">
-                  <NavLink to="/companies" href="/companies">
-                    <p>companies</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem className="navbar-text">
-                  <NavLink>
-                    <p>associations</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem className="navbar-text">
-                  <NavLink to="/signup" href="/signup">
-                    <p>sign up</p>
-                  </NavLink>
-                </NavItem>
+                <NavLink>
+                  about
+                </NavLink>
+                <NavLink>
+                  associations
+                </NavLink>
+                <NavLink to="/companies" href="/companies">
+                  companies
+                </NavLink>
+                <NavLink to="/schools" href="/schools">
+                  schools
+                </NavLink>
+                <NavLink to="/signup" href="/signup">
+                  sign up
+                </NavLink>
               </Nav>
             </Collapse>
           </Navbar>
           <Route path={ROUTES.HOME} exact component={Home} />
           <Route path={ROUTES.SCHOOLS} component={Schools} />
           <Route path={ROUTES.COMPANIES} component={Companies} />
-          <Route path={ROUTES.SIGNUP} component={SignUp} />
-          <Route path={ROUTES.SIGNIN} component={SignIn} />
-      </Router>
+          <Route path={ROUTES.SIGN_UP} component={SignUp} />
+          <Route path={ROUTES.SIGN_IN} component={SignIn} />
+          <Route path={ROUTES.USER_ENTRY} component={UserEntryForm} />
+        </Router>
     );
   }
 }

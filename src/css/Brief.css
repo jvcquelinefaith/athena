@@ -1,13 +1,9 @@
-#brief-row {
-  max-height: 40vh;
-  background-color: #EBE8ED;
-}
-
 #text-description {
   color: black;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-color: #EBE8ED;
 }
 
 @media screen and (max-width: 600px) {

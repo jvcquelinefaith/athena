@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 600px) {
   #about-row {
-    height: 35vh;
+    height: 15em;
   }
 
   #about-text {

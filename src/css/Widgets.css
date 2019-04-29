@@ -77,8 +77,22 @@
   font-style: italic;
 }
 
+.add-new-button {
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 600px) {
   .athena-small-widget h3 {
     font-size: 1em;
   }
+
+  .athena-small-widget {
+    height: 20vh;
+  }
+
+  .athena-small-widget h3 {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+
 }

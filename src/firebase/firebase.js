@@ -14,7 +14,6 @@ var config = {
 class Firebase {
   constructor() {
     app.initializeApp(config);
-
     this.auth = app.auth();
     this.db = app.database();
   }
@@ -35,6 +34,11 @@ class Firebase {
   user = uid => this.db.ref(`users/${uid}`);
 
   users = () => this.db.ref('users');
+
+  writeProfileData = (state) =>
+    this.db.ref(`profiles/${this.auth.currentUser.uid}`)
+    .set({ ...state });
+  //  .then(alert());
 }
 
 export default Firebase;
