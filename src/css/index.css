@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Hanken Grotesk", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "Work Sans",
     sans-serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
@@ -13,57 +12,39 @@ div, Button, .ranking-badge, Input {
 }
 
 h1 {
-  font-family: "Hanken Grotesk Black";
-  font-size: 2.5em;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-family: "Hanken Grotesk Black";
+  font-family: "Work Sans";
   font-size: 2.5em;
 }
 
 h3 {
-  font-family: "Hanken Grotesk Black";
+  font-family: "Work Sans";
   font-size: 1.2em;
 }
 
 h5, p {
-  font-family: "Hanken Grotesk";
+  font-family: "Work Sans";
   font-size: 1em;
 }
 
 .athena-primary {
-  font-family: "Hanken Grotesk Medium";
-  background-color: black;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.4em;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.athena-secondary {
-  font-family: "Hanken Grotesk Medium";
-  background-color: #9A8DA4;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.4em;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.athena-primary-white {
-  font-family: "Hanken Grotesk Medium";
-  background-color: white;
+  font-family: "Work Sans";
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0;
   border: none;
   color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.4em;
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align:left;
+  font-size: 1em;
+}
+
+.athena-primary:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: black;
 }

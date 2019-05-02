@@ -1,33 +1,57 @@
 #pathways-row {
-  background-color: white;
   width: 100%;
   padding-top: 2vh;
-  padding-left: 11vw;
-  padding-right: 11vw;
   padding-bottom: 5vh;
 }
 
 #pathways-header {
   text-align: center;
+  padding-top: 5vh;
 }
 
 #pathways-row img {
-  padding: 2vw;
+  padding: 25px;
+  height: 240px;
+}
+
+#pathways-row .athena-primary {
+  font-size: 0.8em;
 }
 
 #path-cards p {
   font-size: 0.9em;
+  text-align: left;
 }
 
 #path-cards {
   padding-top: 5vh;
-  padding-left: 10vw;
+  padding-left: 16vw;
 }
 
 #path-card {
-  height: 70vh;
-  width: 20vw;
+  height: 420px;
+  width: 250px;
   border: 1px solid #F3EAFD;
-  box-shadow: 0 0 15px 0 #F3EAFD;
-  margin-right: 2vw;
+  margin-right: 72px;
+  display: inline-flex;
+  padding-bottom: 5px;
+}
+
+#underlined:after{
+  content: url("../images/underline-association.svg");
+  position: absolute;
+  margin-top: 14px;
+  margin-left: -120px;
+}
+#underlined-companies:after{
+  content: url("../images/underline-companies.svg");
+  position: absolute;
+  margin-top: 14px;
+  margin-left: -105px;
+}
+#underlined-schools:after{
+  content: url("../images/underline-schools.svg");
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -75px;
 }

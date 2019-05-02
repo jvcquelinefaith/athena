@@ -1,27 +1,25 @@
 #about-row {
-  height: 85vh;
+  height: 80vh;
   background-color: #F3EAFD;
   width: 100%;
-  padding-left: 11vw;
-  padding-right: 11vw;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 
 #about-h {
   margin-top: 20vh;
+  margin-right: -2vw;
 }
 
 #athena-hero {
   margin-top: 10vh;
 }
 
-#small-descriptor {
-  border-right: solid 1px white;
-  max-height: 10vh;
-}
-
-#small-descriptor p, #second-small-descriptor  p {
-  font-size: 1vw;
-  color: white;
+#underlined-h:after{
+  content: url("../images/underline-header.svg");
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -135px;
 }
 
 @media screen and (max-width: 600px) {

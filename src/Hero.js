@@ -9,12 +9,11 @@ class Hero extends Component {
     return (
       <Row id="about-row">
         <Col md="6" id="about-h">
-          <h1>Empowering Women in Computing</h1>
-          <p>Ready to take the next step in your <br/>
-            career ladder? Athena is here <br/>
-            to help.
+          <h1>Empowering <span id="underlined-h">Women</span> in Computing</h1>
+          <p>a curated list of the associations,
+          companies and schools that support computing women.
           </p>
-          <Button>Learn More</Button>
+          <Button className="athena-primary">→ Learn More</Button>
         </Col>
         <Col md="3">
           <img id="athena-hero" src={require("./images/athena-hero.svg")}/>

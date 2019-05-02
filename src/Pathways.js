@@ -49,40 +49,40 @@ class Pathways extends Component {
           with career-making key <br/> factors.
           Keep exploring to learn more.</p>
         </Col>
-        <Row id="path-cards">
+        <Col md="12" id="path-cards">
             <Card id="path-card">
               <CardImg src={require("./images/athena-assoc.svg")}/>
               <CardBody>
-                <CardTitle><h3>Associations</h3></CardTitle>
+                <CardTitle><h3 id="underlined">Associations</h3></CardTitle>
                 <CardText><p>Learn about the various initiatives
                 for WIC that can provide
-                that boost your
+                that boost your <br/>
                 career needs!</p>
                 </CardText>
-                <Button>Learn More</Button>
+                <Button className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card">
               <CardImg src={require("./images/athena-companies.svg")}/>
               <CardBody>
-                <CardTitle><h3>Companies</h3></CardTitle>
+                <CardTitle><h3 id="underlined-companies">Companies</h3></CardTitle>
                 <CardText><p>Learn about the leading companies
-                in tech that are making positive changes for WIC!</p>
+                in tech that are making positive changes <br/> for WIC!</p>
                 </CardText>
-                <Button>Learn More</Button>
+                <Button className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card">
               <CardImg src={require("./images/athena-schools.svg")}/>
               <CardBody>
-                <CardTitle><h3>Schools</h3></CardTitle>
+                <CardTitle><h3 id="underlined-schools">Schools</h3></CardTitle>
                 <CardText><p>Learn about the schools taking radical
-                strides for diversity and inclusion in CS education!</p>
+                strides for diversity and inclusion for WIC <br/> in CS  education!</p>
                 </CardText>
-                <Button>Learn More</Button>
+                <Button className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
-        </Row>
+        </Col>
       </Row>
     );
   }

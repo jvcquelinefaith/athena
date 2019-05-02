@@ -15,9 +15,6 @@ class Stats extends Component {
         <Col>
           <img id="stats-img" src={require("./images/athena-stats.svg")}/>
         </Col>
-        <Col>
-          <div id="stats"></div>
-        </Col>
       </Row>
     );
   }

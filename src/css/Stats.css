@@ -1,20 +1,13 @@
 #stats-header {
   text-align: center;
+  padding-top: 5vh;
 }
 
 #stats-row {
   background-color: #F3EAFD;
   width: 100%;
   padding-top: 2vh;
-  padding-left: 11vw;
-  padding-right: 11vw;
+  padding-left: 16vw;
+  padding-right: 16vw;
   padding-bottom: 5vh;
-}
-
-#stats {
-  margin-top: 5vh;
-  height: 50vh;
-  width: 50vw;
-  background: #FFFFFF;
-  box-shadow: 0 0 15px 0 #A097A9;
 }
