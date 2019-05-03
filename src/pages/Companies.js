@@ -6,10 +6,11 @@ import SmallWidget from '../widgets/SmallWidget.js';
 class Companies extends Component {
   constructor(props) {
     super(props);
-  }
-
-  renderSmallWidgets() {
-    this.props = [
+    this.state = {
+      limit: 2,
+      error: false
+    };
+    this.widget_props = [
       {
         title: 'Google',
         text: 'They\'re more careful now that their stats have been published',
@@ -35,23 +36,33 @@ class Companies extends Component {
         ranking: 4
       }
     ];
+    this.onLoadMore = this.onLoadMore.bind(this);
+  }
 
-    let widgets = [];
-    for (var i = 0; i < this.props.length; i ++) {
-      widgets.push (
-        <Col xs="6" md="3">
-          <SmallWidget {...this.props[i]}/>
+  onLoadMore() {
+    this.setState({
+      limit: this.state.limit + 2
+    });
+  }
+
+  renderSmallWidgets() {
+    return this.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
+      return(
+        <Col xs="6" md="6">
+          <SmallWidget key={widget_prop.widget_id}{...widget_prop}/>
         </Col>
-      );
-    };
-    return widgets;
+        );
+    });
   }
 
   render() {
     return (
       <Row>
         <Col md="12" id="company-header"><h1>companies</h1></Col>
-        <Row id="company-row">{this.renderSmallWidgets()}</Row>
+        <Row id="company-row">
+          {this.renderSmallWidgets()}
+          <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+        </Row>
       </Row>
     );
   }

@@ -55,8 +55,8 @@ class ExpandedWidget extends Component {
             <h5 className="review">"example review here. wow yeah this company is so great blah..."</h5>
           </ModalBody>
           <ModalFooter className="athena-modal-footer">
-            <Button className="athena-primary" onClick={this.props.toggle}>Apply Now</Button>
-            <Button className="athena-secondary" onClick={this.props.toggle}>Close</Button>
+            <Button className="athena-primary" onClick={this.props.toggle}>→ Apply Now</Button>
+            <Button className="athena-secondary" onClick={this.props.toggle}>→ Close</Button>
           </ModalFooter>
         </Modal>
       </div>

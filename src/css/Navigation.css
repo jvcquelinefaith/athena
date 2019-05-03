@@ -1,12 +1,13 @@
-#logo {
-  font-size: 1.5em;
-  font-family: "Hanken Grotesk Black";
+#athena-nav p, a {
+  font-family: "Work Sans";
+  font-weight: bold;
+  color: rgb(0,0,0,0.87);
+  font-size: 1em;
 }
 
-#athena-nav p, a {
-  font-family: "Hanken Grotesk Black";
+#athena-nav a:hover {
+  border-bottom: 4px solid #F3CD1A;
   color: black;
-  font-size: 1em;
 }
 
 #athena-nav {
@@ -14,27 +15,6 @@
   padding-left: 15vw;
   padding-right: 15vw;
   background-color: #F3EAFD;
-}
-
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url("fonts/HankenGrotesk-Regular.eot");
-  src:url("fonts/HankenGrotesk-Regular.woff")format("woff"),
-  url("fonts/HankenGrotesk-Regular.otf")format("opentype")
-}
-
-@font-face {
-  font-family: "Hanken Grotesk Black";
-  src: url("fonts/HankenGrotesk-Black.eot");
-  src:url("fonts/HankenGrotesk-Black.woff")format("woff"),
-  url("fonts/HankenGrotesk-Black.otf")format("opentype")
-}
-
-@font-face {
-  font-family: "Hanken Grotesk Medium";
-  src: url("fonts/HankenGrotesk-Medium.eot");
-  src:url("fonts/HankenGrotesk-Medium.woff")format("woff"),
-  url("fonts/HankenGrotesk-Medium.otf")format("opentype")
 }
 
 @font-face {

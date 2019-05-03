@@ -14,21 +14,25 @@ div, Button, .ranking-badge, Input {
 h1 {
   font-family: "Work Sans";
   font-weight: bold;
+  color: rgb(0,0,0,0.87);
   font-size: 2.2em;
 }
 
 h2 {
   font-family: "Work Sans";
+  color: rgb(0,0,0,0.87);
   font-size: 2.5em;
 }
 
 h3 {
   font-family: "Work Sans";
+  color: rgb(0,0,0,0.8);
   font-size: 1.2em;
 }
 
 h5, p {
   font-family: "Work Sans";
+  color: rgb(0,0,0,0.54);
   font-size: 1em;
 }
 
@@ -43,8 +47,19 @@ h5, p {
   font-size: 1em;
 }
 
+.athena-secondary {
+  font-family: "Work Sans";
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: #F3CD1A;
+  text-align:left;
+  font-size: 1em;
+}
+
 .athena-primary:hover {
-  text-decoration: underline;
   background-color: #F3CD1A;
+  border-radius: 0;
   color: black;
 }

@@ -24,3 +24,9 @@ Form p {
   font-family: "Work Sans";
   font-size: 0.8em;
 }
+
+.sign-up h2, .sign-in h2 {
+  font-family: "Work Sans";
+  font-size: 1.5em;
+  font-weight: bold;
+}

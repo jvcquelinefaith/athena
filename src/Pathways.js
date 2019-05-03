@@ -12,7 +12,6 @@ class Pathways extends Component {
       company: false,
       association: false
     };
-    this.imageRender = this.imageRender.bind(this);
     this.handleStudyHover = this.handleStudyHover.bind(this);
     this.handleCompanyHover = this.handleCompanyHover.bind(this);
     this.handleAssociationHover = this.handleAssociationHover.bind(this);
@@ -28,16 +27,6 @@ class Pathways extends Component {
 
   handleAssociationHover() {
     this.setState({study: false, company: false, association: true});
-  }
-
-  imageRender() {
-    if (this.state.study) {
-      return
-    } else if (this.state.company) {
-      return
-    } else {
-      return
-    }
   }
 
   render() {
@@ -59,7 +48,7 @@ class Pathways extends Component {
                 that boost your <br/>
                 career needs!</p>
                 </CardText>
-                <Button className="athena-primary">→ Learn More</Button>
+                <Button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card">
@@ -69,7 +58,7 @@ class Pathways extends Component {
                 <CardText><p>Learn about the leading companies
                 in tech that are making positive changes <br/> for WIC!</p>
                 </CardText>
-                <Button className="athena-primary">→ Learn More</Button>
+                <Button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card">
@@ -79,7 +68,7 @@ class Pathways extends Component {
                 <CardText><p>Learn about the schools taking radical
                 strides for diversity and inclusion for WIC <br/> in CS  education!</p>
                 </CardText>
-                <Button className="athena-primary">→ Learn More</Button>
+                <Button href={ROUTES.SCHOOLS} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
         </Col>

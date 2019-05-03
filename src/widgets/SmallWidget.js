@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardText, CardBody,
   CardTitle, Button, Badge, Modal } from 'reactstrap';
 import '../css/Widgets.css';
-import ExpandedWidget from './ExpandedWidget.js';
+import LearnMore from './LearnMore.js';
 
   class SmallWidget extends Component {
   constructor(props) {
@@ -41,28 +41,26 @@ import ExpandedWidget from './ExpandedWidget.js';
      modal: this.state.modal,
      toggle: this.toggle
    };
-    return <ExpandedWidget {...this.props}/>;
+    return <LearnMore {...this.props}/>;
   }
 
   render() {
-    const style = {
-      backgroundImage: "url("+this.props.image+")"
-    }
     return (
       <div>
-        <Card className="athena-small-widget"
-              style={style}
-              onMouseOver={this.setInvisible}
-              onMouseOut={this.setVisible}
-              onClick={this.toggle}>
-          <CardBody id="card-body" hidden={this.state.hidden}>
-            <Badge className="ranking-badge">#{this.props.ranking}</Badge>
+        <Card className="athena-small-widget" onClick={this.toggle}>
+          <CardBody className="card-body" hidden={this.state.hidden}>
             <CardTitle>
               <h3>
                 {this.props.title}
               </h3>
             </CardTitle>
             <CardText><p>{this.props.text}</p></CardText>
+            <Button className="athena-primary">→ Learn More</Button>
+            <div className="tag-list">
+              <Badge>Mentorship</Badge>
+              <Badge>Networking</Badge>
+              <Badge>Large org</Badge>
+            </div>
           </CardBody>
         </Card>
         {this.renderModal()}

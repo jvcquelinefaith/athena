@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Button, Row } from 'reactstrap';
 
-import Typing from 'react-typing-animation';
 import './css/Hero.css';
 
 class Hero extends Component {
