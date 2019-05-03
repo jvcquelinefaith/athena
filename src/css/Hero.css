@@ -15,7 +15,7 @@
   margin-top: 10vh;
 }
 
-#underlined-h:after{
+#underlined-h:after {
   content: url("../images/underline-header.svg");
   position: absolute;
   margin-top: 10px;

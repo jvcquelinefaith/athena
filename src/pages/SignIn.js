@@ -49,7 +49,7 @@ class SignInFormBase extends Component {
     const isInvalid = password === '' || email === '';
 
     return (
-      <Col md={{ size: 6, offset: 3 }} className="sign-in">
+      <Col md={{ size: 4, offset: 3 }} className="sign-in">
         <h2>Sign In</h2>
         <h5>if you dont't have an account yet, click "<a href={ROUTES.SIGN_UP}>sign up</a>"</h5>
         <Form className="form" onSubmit={this.onSubmit}>
@@ -79,7 +79,7 @@ class SignInFormBase extends Component {
             </FormGroup>
           </Col>
           <Button disabled={isInvalid} className="athena-primary" type="submit">
-            Sign In
+            → Sign In
           </Button>
         </Form>
       </Col>

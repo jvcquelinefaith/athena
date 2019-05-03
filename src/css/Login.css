@@ -1,25 +1,26 @@
 .sign-up, .sign-in {
-  margin-top: 5%;
-  border: solid 1px black;
-  padding: 2%;
+  margin-top: 5vh;
+  margin-left: 30vw;
+  width: 35vw;
+  border: solid 1px #F3EAFD;
+  padding-top: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 Form {
-  font-family: "Hanken Grotesk";
+  font-family: "Work Sans";
+  padding-top: 1vh;
+  padding-bottom: 5vh;
 }
 
 Form p {
-  font-family: "Hanken Grotesk";
+  font-family: "Work Sans";
   font-size: 0.8em;
   color: red;
 }
 
 .sign-up h5, .sign-in h5 {
-  font-family: "Hanken Grotesk";
+  font-family: "Work Sans";
   font-size: 0.8em;
-  padding: 1%;
-}
-
-Form .athena-primary {
-  margin-right: 2%;
 }

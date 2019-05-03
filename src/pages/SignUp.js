@@ -109,7 +109,7 @@ class SignUpFormBase extends Component {
               />
             </FormGroup>
           </Col>
-          <Button type="submit" className="athena-primary">Sign Up</Button>
+          <Button type="submit" className="athena-primary">→ Sign Up</Button>
         </Form>
       </Col>
     );

@@ -8,6 +8,7 @@ import './css/Navigation.css';
 import Home from './Home.js';
 import Schools from './pages/Schools.js';
 import Companies from './pages/Companies.js';
+import Associations from './pages/Associations.js';
 import SignUp from './pages/SignUp.js';
 import SignIn from './pages/SignIn.js';
 import UserEntryForm from './pages/UserEntryForm.js';
@@ -39,7 +40,7 @@ class App extends Component {
                 <NavLink>
                   about
                 </NavLink>
-                <NavLink>
+                <NavLink to="/assocations" href="/associations">
                   associations
                 </NavLink>
                 <NavLink to="/companies" href="/companies">
@@ -57,6 +58,7 @@ class App extends Component {
           <Route path={ROUTES.HOME} exact component={Home} />
           <Route path={ROUTES.SCHOOLS} component={Schools} />
           <Route path={ROUTES.COMPANIES} component={Companies} />
+          <Route path={ROUTES.ASSOCIATIONS} component={Associations} />
           <Route path={ROUTES.SIGN_UP} component={SignUp} />
           <Route path={ROUTES.SIGN_IN} component={SignIn} />
           <Route path={ROUTES.USER_ENTRY} component={UserEntryForm} />

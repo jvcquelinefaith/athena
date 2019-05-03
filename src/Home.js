@@ -3,7 +3,7 @@ import { Row } from 'reactstrap';
 
 import Hero from './Hero.js';
 import Pathways from './Pathways.js';
-import Stats from './Stats.js';
+import Reason from './Reason.js';
 import Footer from './Footer.js';
 
 class Home extends Component {
@@ -16,7 +16,7 @@ class Home extends Component {
       <Row>
         <Hero />
         <Pathways />
-        <Stats />
+        <Reason />
         <Footer />
       </Row>
     );

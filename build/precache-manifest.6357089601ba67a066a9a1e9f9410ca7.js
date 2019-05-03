@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5648af598144fdefc4d2",
-    "url": "/static/css/main.40d2a709.chunk.css"
+    "revision": "f411c508086f59531179",
+    "url": "/static/css/main.e96860c3.chunk.css"
   },
   {
-    "revision": "5648af598144fdefc4d2",
-    "url": "/static/js/main.38f001a1.chunk.js"
+    "revision": "f411c508086f59531179",
+    "url": "/static/js/main.6640be11.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/rit.99ccfd66.png"
   },
   {
+    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
+    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
+  },
+  {
     "revision": "8aa432c086261cbc74baf84062e6c6b9",
     "url": "/static/media/HankenGrotesk-Regular.8aa432c0.eot"
   },
   {
-    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
-    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
-  },
-  {
-    "revision": "ea8cbdeb0c48c1f9fdd6b8945a7c9909",
-    "url": "/static/media/HankenGrotesk-Black.ea8cbdeb.woff"
+    "revision": "7ed163a63c0d38f106433ec9059eb947",
+    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
   },
   {
     "revision": "499224d62b17855e77ce16bc42743aaf",
@@ -44,12 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/HankenGrotesk-Medium.11157450.eot"
   },
   {
-    "revision": "7ed163a63c0d38f106433ec9059eb947",
-    "url": "/static/media/HankenGrotesk-Medium.7ed163a6.woff"
-  },
-  {
-    "revision": "9e8bb12f3324035305def0b40a99a390",
-    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
+    "revision": "a3d1b1bb79e0160c52337a5c9bc62058",
+    "url": "/static/media/HankenGrotesk-Regular.a3d1b1bb.woff"
   },
   {
     "revision": "616709b89e6ede82f6e0ff78340ce9e5",
@@ -60,8 +56,32 @@ self.__precacheManifest = [
     "url": "/static/media/HankenGrotesk-Medium.15c02b41.otf"
   },
   {
-    "revision": "12edf67b7d320527afd9f462cbb4126e",
-    "url": "/static/media/athena-hero.12edf67b.svg"
+    "revision": "9e8bb12f3324035305def0b40a99a390",
+    "url": "/static/media/HankenGrotesk-Regular.9e8bb12f.otf"
+  },
+  {
+    "revision": "30be604d29fd477c201fb1d6e668eaeb",
+    "url": "/static/media/WorkSans-Regular.30be604d.ttf"
+  },
+  {
+    "revision": "2278658b26e77110da1bf67c2c542b3b",
+    "url": "/static/media/underline-header.2278658b.svg"
+  },
+  {
+    "revision": "a0d02da3df1a61d0d02c6214fb059a8d",
+    "url": "/static/media/athena-hero.a0d02da3.svg"
+  },
+  {
+    "revision": "fba1cd7803b39a524dcb6d58c30df8cc",
+    "url": "/static/media/underline-schools.fba1cd78.svg"
+  },
+  {
+    "revision": "70e4b48ea1be91940e64ca1a969ad3f1",
+    "url": "/static/media/underline-companies.70e4b48e.svg"
+  },
+  {
+    "revision": "924864f336dd26fa70d1839de1e677bb",
+    "url": "/static/media/underline-association.924864f3.svg"
   },
   {
     "revision": "cb853b77fa2a5bbadf5322fe2f99c303",
@@ -72,8 +92,8 @@ self.__precacheManifest = [
     "url": "/static/media/athena-companies.fdaeb09c.svg"
   },
   {
-    "revision": "074d5f991d9862e51757815ace14583e",
-    "url": "/static/media/athena-schools.074d5f99.svg"
+    "revision": "c515bcf611a3b47d5b8dbdb04dcbd6b8",
+    "url": "/static/media/athena-schools.c515bcf6.svg"
   },
   {
     "revision": "33decf64d4ddff0bc157906ab12f5ce1",
@@ -104,7 +124,7 @@ self.__precacheManifest = [
     "url": "/static/media/amazon.7967c876.jpg"
   },
   {
-    "revision": "9895eacc9bfb317779e325d9da4247b5",
+    "revision": "0e4f7f66fd5037e4d1dfe64e2de20b2f",
     "url": "/index.html"
   }
 ];
