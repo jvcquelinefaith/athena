@@ -69,11 +69,17 @@
   background-color: #F3EAFD;
   color: rgb(0,0,0,0.54);
   border-radius: 0;
-  margin-right: 12px;
+  margin-right: 2vw;
 }
 
 #athena-load {
   margin-left: 25vw;
+}
+
+#loading {
+  margin-top: 2vh;
+  margin-left: 45vw;
+  border-radius: 50% !important;
 }
 
 .athena-modal-header, .athena-modal-body, .athena-modal-footer {
@@ -116,17 +122,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  .athena-small-widget h3 {
-    font-size: 1em;
+  #association-header h1:before,  #school-header h1:before, #company-header h1:before {
+    display: none;
   }
 
-  .athena-small-widget {
+  #company-header, #school-header, #association-header {
+    padding-top: 5vh;
+    padding-left: 5vw;
     height: 20vh;
+    text-align: center;
   }
-
-  .athena-small-widget h3 {
-    padding-top: 10%;
-    padding-bottom: 15%;
-  }
-
 }

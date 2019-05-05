@@ -12,28 +12,20 @@ class Companies extends Component {
     };
     this.widget_props = [
       {
-        title: 'Google',
-        text: 'They\'re more careful now that their stats have been published',
-        image: require("../images/google.png"),
-        ranking: 1
+        name: 'Google',
+        desc: 'They\'re more careful now that their stats have been published',
       },
       {
-        title: 'Facebook',
-        text: 'Sheryll Sandberg did wonders for their rep lol',
-        image: require("../images/facebook.png"),
-        ranking: 2
+        name: 'Facebook',
+        desc: 'Sheryll Sandberg did wonders for their rep lol',
       },
       {
-        title: 'Apple',
-        text: 'They seem pretty neutral. Maybe they have more female designers',
-        image: require("../images/apple.png"),
-        ranking: 3
+        name: 'Apple',
+        desc: 'They seem pretty neutral. Maybe they have more female designers',
       },
       {
-        title: 'Amazon',
-        text: 'This place is apparently a hell-hole.',
-        image: require("../images/amazon.jpg"),
-        ranking: 4
+        name: 'Amazon',
+        desc: 'This place is apparently a hell-hole.',
       }
     ];
     this.onLoadMore = this.onLoadMore.bind(this);

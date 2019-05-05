@@ -1,7 +1,8 @@
 #pathways-row {
-  width: 100%;
   padding-top: 2vh;
   padding-bottom: 5vh;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 
 #pathways-header {
@@ -25,16 +26,18 @@
 
 #path-cards {
   padding-top: 5vh;
-  padding-left: 16vw;
 }
 
-#path-card {
+#path-card, #path-card-r {
   height: 420px;
   width: 250px;
   border: 1px solid #F3EAFD;
-  margin-right: 72px;
   display: inline-flex;
   padding-bottom: 5px;
+}
+
+#path-card-r {
+  margin-right: 5vw;
 }
 
 #underlined:after{

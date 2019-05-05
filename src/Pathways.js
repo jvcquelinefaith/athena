@@ -32,14 +32,14 @@ class Pathways extends Component {
   render() {
     return (
       <Row id="pathways-row">
-        <Col md="12" id="pathways-header">
+        <Col xs="12" md="12" id="pathways-header">
           <h1>select your path</h1>
           <p>The paths below have been paved
           with career-making key <br/> factors.
           Keep exploring to learn more.</p>
         </Col>
-        <Col md="12" id="path-cards">
-            <Card id="path-card">
+        <Col xs="12" md="12" id="path-cards">
+            <Card id="path-card-r">
               <CardImg src={require("./images/athena-assoc.svg")}/>
               <CardBody>
                 <CardTitle><h3 id="underlined">Associations</h3></CardTitle>
@@ -51,7 +51,7 @@ class Pathways extends Component {
                 <Button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
-            <Card id="path-card">
+            <Card id="path-card-r">
               <CardImg src={require("./images/athena-companies.svg")}/>
               <CardBody>
                 <CardTitle><h3 id="underlined-companies">Companies</h3></CardTitle>

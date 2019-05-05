@@ -1,7 +1,5 @@
 #about-row {
-  height: 80vh;
   background-color: #F3EAFD;
-  width: 100%;
   padding-left: 16vw;
   padding-right: 16vw;
 }
@@ -15,32 +13,20 @@
   margin-top: 10vh;
 }
 
+@media screen and (max-width: 600px) {
+  #about-h {
+    margin-top: 15vh;
+  }
+
+  #athena-hero {
+    margin-top: 0;
+    visibility: hidden;
+  }
+}
+
 #underlined-h:after {
   content: url("../images/underline-header.svg");
   position: absolute;
   margin-top: 10px;
   margin-left: -135px;
-}
-
-@media screen and (max-width: 600px) {
-  #about-row {
-    height: 15em;
-  }
-
-  #about-text {
-    padding-top: 5%;
-  }
-
-  #about-button {
-    font-size: 2.5vw;
-  }
-
-  #small-descriptor {
-    height: 15vh;
-  }
-
-  #small-descriptor p, #second-small-descriptor  p {
-    font-size: 2vw;
-    color: white;
-  }
 }

@@ -1,41 +1,20 @@
 import React, { Component } from 'react';
-import { Col, Button, Row } from 'reactstrap';
+import { Col, Button, Row, Spinner } from 'reactstrap';
 import '../css/Widgets.css';
 import SmallWidget from '../widgets/SmallWidget.js';
+import { compose } from 'recompose';
+import { withFirebase } from '../firebase';
 
 class Associations extends Component {
   constructor(props) {
     super(props);
     this.state = {
       limit: 2,
-      error: false
+      error: false,
+      loading: true,
+      widget_props: []
     };
-    this.widget_props = [
-      {
-        title: 'Google',
-        text: 'They\'re more careful now that their stats have been published',
-        image: require("../images/google.png"),
-        ranking: 1
-      },
-      {
-        title: 'Facebook',
-        text: 'Sheryll Sandberg did wonders for their rep lol',
-        image: require("../images/facebook.png"),
-        ranking: 2
-      },
-      {
-        title: 'Apple',
-        text: 'They seem pretty neutral. Maybe they have more female designers',
-        image: require("../images/apple.png"),
-        ranking: 3
-      },
-      {
-        title: 'Amazon',
-        text: 'This place is apparently a hell-hole.',
-        image: require("../images/amazon.jpg"),
-        ranking: 4
-      }
-    ];
+
     this.onLoadMore = this.onLoadMore.bind(this);
   }
 
@@ -45,27 +24,66 @@ class Associations extends Component {
     });
   }
 
+  componentDidMount() {
+    this.setState({ loading: true });
+
+    this.props.firebase.associations().on('value', snapshot => {
+
+      const associationObject = snapshot.val();
+
+      const associationList = Object.keys(associationObject).map(key => ({
+        ...associationObject[key],
+        aid: key,
+      }));
+
+      this.setState({
+        widget_props: associationList,
+        loading: false,
+      });
+    });
+  }
+
+
   renderSmallWidgets() {
-    return this.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
+    this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
+      console.log("inside render");
+      console.log(widget_prop);
       return(
         <Col xs="6" md="6">
-          <SmallWidget key={widget_prop.widget_id}{...widget_prop}/>
+          <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         </Col>
         );
     });
   }
 
   render() {
+    const { loading } = this.state;
+
     return (
       <Row>
-        <Col md="12" id="association-header"><h1>associations</h1></Col>
+        <Col xs="12" md="12" id="association-header"><h1>associations</h1></Col>
+        <Col xs="12" md="12">
+          { loading &&
+            <div id="loading">
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+            </div>
+          }
+        </Col>
         <Row id="association-row">
           {this.renderSmallWidgets()}
-          <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+          { this.widget_props && this.widget_props > 0 &&
+            <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+          }
         </Row>
       </Row>
     );
   }
 }
 
-export default Associations;
+const AssociationsPage = compose(
+  withFirebase
+)(Associations);
+
+export default AssociationsPage;

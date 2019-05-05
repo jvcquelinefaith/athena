@@ -17,7 +17,14 @@
   background-color: #F3EAFD;
 }
 
+@media screen and (max-width: 600px) {
+  #athena-nav {
+    background-color: #F3EAFD;
+  }
+}
+
 @font-face {
-  font-family: "Work Sans";
-  src: url("fonts/WorkSans-Regular.ttf");
+  font-family: 'Work Sans', sans-serif;
+  src: url('fonts/WorkSans-Regular.ttf');
+  src: url('https://fonts.googleapis.com/css?family=Work+Sans');
 }

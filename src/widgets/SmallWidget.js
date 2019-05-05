@@ -51,10 +51,10 @@ import LearnMore from './LearnMore.js';
           <CardBody className="card-body" hidden={this.state.hidden}>
             <CardTitle>
               <h3>
-                {this.props.title}
+                {this.props.name}
               </h3>
             </CardTitle>
-            <CardText><p>{this.props.text}</p></CardText>
+            <CardText><p>{this.props.desc}</p></CardText>
             <Button className="athena-primary">→ Learn More</Button>
             <div className="tag-list">
               <Badge>Mentorship</Badge>

@@ -32,9 +32,9 @@ class App extends Component {
   render() {
     return (
         <Router>
-          <Navbar id="athena-nav" expand="md">
+          <Navbar id="athena-nav" light expand="md">
             <NavbarBrand id="logo" href="/">athena</NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
+            <NavbarToggler id="toggler" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavLink>

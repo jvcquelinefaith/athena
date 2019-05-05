@@ -8,7 +8,11 @@ html, body {
 }
 
 div, Button, .ranking-badge, Input {
-  border-radius: 0 !important;
+  border-radius: 0;
+}
+
+row {
+  overflow-x: none;
 }
 
 h1 {
