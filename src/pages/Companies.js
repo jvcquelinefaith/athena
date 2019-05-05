@@ -1,34 +1,41 @@
 import React, { Component } from 'react';
-import { Col, Button, Row } from 'reactstrap';
+import { Col, Button, Row, Spinner } from 'reactstrap';
 import '../css/Widgets.css';
 import SmallWidget from '../widgets/SmallWidget.js';
+import { compose } from 'recompose';
+import { withFirebase } from '../firebase';
 
 class Companies extends Component {
   constructor(props) {
     super(props);
     this.state = {
       limit: 2,
-      error: false
+      error: false,
+      loading: true,
+      widgets: false,
+      widget_props: []
     };
-    this.widget_props = [
-      {
-        name: 'Google',
-        desc: 'They\'re more careful now that their stats have been published',
-      },
-      {
-        name: 'Facebook',
-        desc: 'Sheryll Sandberg did wonders for their rep lol',
-      },
-      {
-        name: 'Apple',
-        desc: 'They seem pretty neutral. Maybe they have more female designers',
-      },
-      {
-        name: 'Amazon',
-        desc: 'This place is apparently a hell-hole.',
-      }
-    ];
     this.onLoadMore = this.onLoadMore.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ loading: true });
+
+    this.props.firebase.companies().on('value', snapshot => {
+
+      const companyObject = snapshot.val();
+
+      const companyList = Object.keys(companyObject).map(key => ({
+        ...companyObject[key],
+        cid: key,
+      }));
+
+      this.setState({
+        widget_props: companyList,
+        widgets: true,
+        loading: false,
+      });
+    });
   }
 
   onLoadMore() {
@@ -38,26 +45,43 @@ class Companies extends Component {
   }
 
   renderSmallWidgets() {
-    return this.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
+    return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
         <Col xs="6" md="6">
-          <SmallWidget key={widget_prop.widget_id}{...widget_prop}/>
+          <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         </Col>
         );
     });
   }
 
   render() {
+    const { loading, widgets } = this.state;
+
     return (
       <Row>
         <Col md="12" id="company-header"><h1>companies</h1></Col>
+        <Col xs="12" md="12">
+          { loading &&
+            <div id="loading">
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+            </div>
+          }
+        </Col>
         <Row id="company-row">
           {this.renderSmallWidgets()}
-          <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+          { widgets &&
+            <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">→ View more</Button>
+          }
         </Row>
       </Row>
     );
   }
 }
 
-export default Companies;
+const CompaniesPage = compose(
+  withFirebase
+)(Companies);
+
+export default CompaniesPage;

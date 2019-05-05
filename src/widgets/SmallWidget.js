@@ -57,9 +57,9 @@ import LearnMore from './LearnMore.js';
             <CardText><p>{this.props.desc}</p></CardText>
             <Button className="athena-primary">→ Learn More</Button>
             <div className="tag-list">
-              <Badge>Mentorship</Badge>
-              <Badge>Networking</Badge>
-              <Badge>Large org</Badge>
+              <Badge>{this.props.tags && this.props.tags[0]}</Badge>
+              <Badge>{this.props.tags && this.props.tags[1]}</Badge>
+              <Badge>{this.props.tags && this.props.tags[2]}</Badge>
             </div>
           </CardBody>
         </Card>

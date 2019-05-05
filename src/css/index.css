@@ -7,7 +7,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-div, Button, .ranking-badge, Input {
+div, Button, .badge, Input {
   border-radius: 0;
 }
 

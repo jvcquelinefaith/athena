@@ -12,6 +12,7 @@ class Associations extends Component {
       limit: 2,
       error: false,
       loading: true,
+      widgets: false,
       widget_props: []
     };
 
@@ -38,6 +39,7 @@ class Associations extends Component {
 
       this.setState({
         widget_props: associationList,
+        widgets: true,
         loading: false,
       });
     });
@@ -45,9 +47,7 @@ class Associations extends Component {
 
 
   renderSmallWidgets() {
-    this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
-      console.log("inside render");
-      console.log(widget_prop);
+    return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
         <Col xs="6" md="6">
           <SmallWidget key={widget_prop.aid}{...widget_prop}/>
@@ -57,7 +57,7 @@ class Associations extends Component {
   }
 
   render() {
-    const { loading } = this.state;
+    const { loading, widgets } = this.state;
 
     return (
       <Row>
@@ -73,8 +73,8 @@ class Associations extends Component {
         </Col>
         <Row id="association-row">
           {this.renderSmallWidgets()}
-          { this.widget_props && this.widget_props > 0 &&
-            <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+          { widgets &&
+            <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">→ View more</Button>
           }
         </Row>
       </Row>

@@ -48,6 +48,9 @@
 .athena-small-widget p {
   font-size: 0.9em;
   height: 6vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .athena-small-widget h3 {
@@ -63,16 +66,24 @@
 
 .tag-list {
   display: inline-flex;
+  height: 3vh;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.tag-list::-webkit-scrollbar {
+  display: none;
 }
 
 .badge {
   background-color: #F3EAFD;
   color: rgb(0,0,0,0.54);
   border-radius: 0;
-  margin-right: 2vw;
+  margin-right: 0.5vw;
 }
 
 #athena-load {
+  margin-top: 5vh;
   margin-left: 25vw;
 }
 
@@ -97,7 +108,7 @@
   color: rgb(0,0,0,0.8);
 }
 
-.athena-modal-header h5 {
+.athena-modal-body h5 {
   font-size: 1em;
   color: rgb(0,0,0,0.6);
 }
@@ -106,8 +117,8 @@
   font-size: 1em;
   font-weight: bold;
   color: rgb(0,0,0,0.8);
+  margin-top: 5vh;
 }
-
 
 .athena-modal-body p {
   color: #505051;
