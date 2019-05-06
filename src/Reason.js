@@ -10,7 +10,7 @@ class Reason extends Component {
           <h1>Athena is your One-Stop-Shop</h1>
           <p>get started with all the tools that build a <br/> successful career in computing.</p>
         </Col>
-        <Col id="top-row" xs="12" md="12">
+        <Col id="top-row" md="12">
           <Col id="stats-img" xs="6" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Mentorship</p>
@@ -19,7 +19,7 @@ class Reason extends Component {
             <img src={require("./images/athena-stats.svg")}/>
             <p>Community</p>
           </Col>
-          <Col id="stats-img-sup" xs="6" md="4">
+          <Col id="stats-img-sup" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Support</p>
           </Col>

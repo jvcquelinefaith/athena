@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <Row id="footer-row">
-        <Col md="4">
+        <Col xs="6" md="4">
           <h4>Mission</h4>
           <p>Our goal is to get the population
           of women in computing closer to 50%
@@ -17,7 +17,7 @@ class Footer extends Component {
           <p id="copyright">© All Rights Reserved. Athena. 2019.</p>
         </Col>
 
-        <Col md={{size: 2, offset: 1}}>
+        <Col xs="6" md={{size: 2, offset: 1}}>
           <h4>Pages</h4>
           <p>associations<br/>
           companies<br/>
@@ -27,7 +27,7 @@ class Footer extends Component {
           <p>Privacy Policy</p>
         </Col>
 
-        <Col md="2">
+        <Col xs="6" md="2">
           <h4>Social</h4>
           <p>facebook<br/>
           instagram<br/>
@@ -37,7 +37,7 @@ class Footer extends Component {
           <p>Partnerships</p>
         </Col>
 
-        <Col md="2">
+        <Col xs="6" md="2">
           <h4>Numbers</h4>
           <p>145 women to date<br/>
           14 associations<br/>

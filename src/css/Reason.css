@@ -51,15 +51,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  #stats-img-sup {
-    clear: left;
-  }
-
   #top-row {
     overflow-x: hidden;
   }
 
-  #stats-img p:after, #stats-img-sup p:after {
+  #stats-img p:after {
     position: relative;
     margin-top: 0;
     margin-left: 0;
