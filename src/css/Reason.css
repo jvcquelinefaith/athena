@@ -11,7 +11,6 @@
   padding-left: 16vw;
   padding-right: 16vw;
   padding-bottom: 5vh;
-  overflow: auto;
 }
 
 #top-row, #bottom-row {
@@ -28,9 +27,16 @@
   margin-right: 6vw;
 }
 
-#stats-img p {
+#stats-img p, #stats-img-sup p {
   font-weight: bold;
   color: rgb(0,0,0,0.87);
+}
+
+#stats-img-sup p:after {
+  content: url("../images/underline-schools.svg");
+  position: absolute;
+  margin-top: 14px;
+  margin-left: -70px;
 }
 
 #stats-img p:after {
@@ -42,4 +48,21 @@
 
 #reason-footer {
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #stats-img-sup {
+    clear: left;
+  }
+
+  #top-row {
+    overflow-x: hidden;
+  }
+
+  #stats-img p:after, #stats-img-sup p:after {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
 }

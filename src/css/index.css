@@ -11,8 +11,9 @@ div, Button, .badge, Input {
   border-radius: 0;
 }
 
-row {
+.row {
   overflow-x: none;
+  margin-right: 0;
 }
 
 h1 {

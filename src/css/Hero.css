@@ -13,6 +13,13 @@
   margin-top: 10vh;
 }
 
+#underlined-h:after {
+  content: url("../images/underline-header.svg");
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -135px;
+}
+
 @media screen and (max-width: 600px) {
   #about-h {
     margin-top: 15vh;
@@ -20,13 +27,11 @@
 
   #athena-hero {
     margin-top: 0;
-    visibility: hidden;
+    display: none;
   }
-}
 
-#underlined-h:after {
-  content: url("../images/underline-header.svg");
-  position: absolute;
-  margin-top: 10px;
-  margin-left: -135px;
+  #about-h .athena-primary {
+    margin-bottom: 5vh;
+  }
+
 }

@@ -7,29 +7,29 @@ class Reason extends Component {
     return (
       <Row id="reason-row">
         <Col md="12" id="reason-header">
-          <h1>athena is your one-stop-shop for</h1>
-          <p>all the key ingredients for a successful career in computing.</p>
+          <h1>Athena is your One-Stop-Shop</h1>
+          <p>get started with all the tools that build a <br/> successful career in computing.</p>
         </Col>
-        <Col id="top-row" md="12">
-          <Col id="stats-img" md="4">
+        <Col id="top-row" xs="12" md="12">
+          <Col id="stats-img" xs="6" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Mentorship</p>
           </Col>
-          <Col id="stats-img" md="4">
+          <Col id="stats-img" xs="6" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Community</p>
           </Col>
-          <Col id="stats-img" md="4">
+          <Col id="stats-img-sup" xs="6" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Support</p>
           </Col>
         </Col>
         <Col id="bottom-row" md="12">
-          <Col id="stats-img" md={{size: 4, offset:2}}>
+          <Col id="stats-img" xs="6" md={{size: 4, offset:2}}>
             <img src={require("./images/athena-stats.svg")}/>
             <p>Resources</p>
           </Col>
-          <Col id="stats-img" md="4">
+          <Col id="stats-img" xs="6" md="4">
             <img src={require("./images/athena-stats.svg")}/>
             <p>Opportunities</p>
           </Col>

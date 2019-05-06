@@ -37,7 +37,7 @@ class Firebase {
 
   associations = () => this.db.ref('associations');
   companies = () => this.db.ref('companies');
-
+  schools = () => this.db.ref('schools');
 
   writeProfileData = (state) =>
     this.db.ref(`profiles/${this.auth.currentUser.uid}`)

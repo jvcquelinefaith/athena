@@ -47,7 +47,7 @@ class Companies extends Component {
   renderSmallWidgets() {
     return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
-        <Col xs="6" md="6">
+        <Col xs="12" md="6">
           <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         </Col>
         );
@@ -60,9 +60,9 @@ class Companies extends Component {
     return (
       <Row>
         <Col md="12" id="company-header"><h1>companies</h1></Col>
-        <Col xs="12" md="12">
+        <Col id="loading" xs="12" md="12">
           { loading &&
-            <div id="loading">
+            <div>
               <Spinner  color="dark" />
               <Spinner  color="dark" />
               <Spinner  color="dark" />

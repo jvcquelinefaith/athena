@@ -1,34 +1,41 @@
 import React, { Component } from 'react';
-import { Col, Button, Row } from 'reactstrap';
+import { Col, Button, Row, Spinner } from 'reactstrap';
 import SmallWidget from '../widgets/SmallWidget.js';
 import '../css/Widgets.css';
+import { compose } from 'recompose';
+import { withFirebase } from '../firebase';
 
 class Schools extends Component {
   constructor(props) {
     super(props);
     this.state = {
       limit: 2,
-      error: false
+      error: false,
+      loading: true,
+      widgets: false,
+      widget_props: []
     };
-    this.widget_props = [
-      {
-        name: 'Rochester Institute of Technology',
-        desc: 'Yeah, super bad example of inclusion',
-      },
-      {
-        name: 'Harvard University',
-        desc: 'Kinda okay example of inclusion',
-      },
-      {
-        name: 'University of Southern California',
-        desc: 'Maybe but I really have no idea',
-      },
-      {
-        name: 'Pennsylvania State University',
-        desc: 'Way too bro for my taste personally',
-      }
-    ];
     this.onLoadMore = this.onLoadMore.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ loading: true });
+
+    this.props.firebase.schools().on('value', snapshot => {
+
+      const schoolObject = snapshot.val();
+
+      const schoolList = Object.keys(schoolObject).map(key => ({
+        ...schoolObject[key],
+        cid: key,
+      }));
+
+      this.setState({
+        widget_props: schoolList,
+        widgets: true,
+        loading: false,
+      });
+    });
   }
 
   onLoadMore() {
@@ -38,9 +45,9 @@ class Schools extends Component {
   }
 
   renderSmallWidgets() {
-    return this.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
+    return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
-        <Col xs="6" md="6">
+        <Col xs="12" md="6">
           <SmallWidget key={widget_prop.widget_id}{...widget_prop}/>
         </Col>
         );
@@ -48,12 +55,25 @@ class Schools extends Component {
   }
 
   render() {
+    const { loading, widgets } = this.state;
+
     return (
       <Row>
         <Col md="12" id="school-header"><h1>schools</h1></Col>
+        <Col id="loading" xs="12" md="12">
+          { loading &&
+            <div>
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+              <Spinner  color="dark" />
+            </div>
+          }
+        </Col>
         <Row id="school-row">
           {this.renderSmallWidgets()}
-          <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">View more</Button>
+          { widgets &&
+            <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">→ View more</Button>
+          }
         </Row>
       </Row>
 
@@ -61,4 +81,8 @@ class Schools extends Component {
   }
 }
 
-export default Schools;
+const SchoolsPage = compose(
+  withFirebase
+)(Schools);
+
+export default SchoolsPage;

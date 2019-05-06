@@ -47,7 +47,7 @@
 
 .athena-small-widget p {
   font-size: 0.9em;
-  height: 6vh;
+  height: 4vh;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -88,8 +88,8 @@
 }
 
 #loading {
-  margin-top: 2vh;
-  margin-left: 45vw;
+  margin-top: 5vh;
+  margin-left: 46vw;
   border-radius: 50% !important;
 }
 
@@ -142,5 +142,24 @@
     padding-left: 5vw;
     height: 20vh;
     text-align: center;
+  }
+
+  #loading {
+    margin-left: 35vw;
+  }
+
+  .athena-small-widget h3 {
+    font-size: 1.2em;
+    height: 5vh;
+  }
+
+  .athena-small-widget p {
+    height: 2vh;
+  }
+
+  .athena-small-widget {
+    height: auto;
+    width: 70vw;
+    margin-bottom: 1vh;
   }
 }

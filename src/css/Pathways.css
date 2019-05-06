@@ -37,7 +37,7 @@
 }
 
 #path-card-r {
-  margin-right: 5vw;
+  margin-right: 4vw;
 }
 
 #underlined:after{
@@ -57,4 +57,11 @@
   position: absolute;
   margin-top: 10px;
   margin-left: -75px;
+}
+
+@media screen and (max-width: 600px) {
+  #path-card-r {
+    margin-right: 0;
+    margin-bottom: 1vh;
+  }
 }
