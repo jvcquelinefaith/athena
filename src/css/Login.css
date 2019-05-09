@@ -30,3 +30,11 @@ Form p {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+
+@media screen and (max-width: 600px) {
+  .sign-up, .sign-in {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+}

@@ -65,12 +65,12 @@ class SignUpFormBase extends Component {
     const props = this.props;
 
     return (
-      <Col md={{ size: 6, offset: 3 }} className="sign-up">
+      <Col xs="12" md={{ size: 6, offset: 3 }} className="sign-up">
         <h2>Sign Up</h2>
         <h5>if you already have an account with us, click "<a href={ROUTES.SIGN_IN}>sign in</a>"</h5>
         <Form className="form" onSubmit={this.onSubmit}>
           {error && <p invalid id="errorMessage">{error.message}</p>}
-          <Col>
+          <Col xs="12">
             <FormGroup>
               <Label>Username</Label>
               <Input
@@ -83,7 +83,7 @@ class SignUpFormBase extends Component {
               />
             </FormGroup>
           </Col>
-          <Col>
+          <Col xs="12">
             <FormGroup>
               <Label>Email</Label>
               <Input
@@ -96,7 +96,7 @@ class SignUpFormBase extends Component {
               />
             </FormGroup>
           </Col>
-          <Col>
+          <Col xs="12">
             <FormGroup>
               <Label for="examplePassword">Password</Label>
               <Input

@@ -1,7 +1,7 @@
 #company-row, #school-row, #association-row {
   padding-top: 5vh;
-  padding-left: 22vw;
-  padding-right: 22vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 #company-header, #school-header, #association-header {
@@ -38,7 +38,7 @@
 
 .athena-small-widget {
   height: 32vh;
-  width: 25vw;
+  width: 20vw;
   background: #FFFFFF;
   border: 1px solid #F3EAFD;
   box-shadow: 0 0 15px 0 #F3EAFD;
@@ -54,7 +54,7 @@
 }
 
 .athena-small-widget h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   height: 8vh;
 }
@@ -84,7 +84,7 @@
 
 #athena-load {
   margin-top: 5vh;
-  margin-left: 24vw;
+  margin-left: 30vw;
   margin-bottom: 15vh;
 }
 

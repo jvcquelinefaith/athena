@@ -9,7 +9,7 @@ class Companies extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      limit: 2,
+      limit: 3,
       error: false,
       loading: true,
       widgets: false,
@@ -47,7 +47,7 @@ class Companies extends Component {
   renderSmallWidgets() {
     return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
-        <Col xs="12" md="6">
+        <Col xs="12" md="4">
           <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         </Col>
         );
