@@ -40,7 +40,7 @@ class Companies extends Component {
 
   onLoadMore() {
     this.setState({
-      limit: this.state.limit + 2
+      limit: this.state.limit + 3
     });
   }
 

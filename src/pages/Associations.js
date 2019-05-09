@@ -21,7 +21,7 @@ class Associations extends Component {
 
   onLoadMore() {
     this.setState({
-      limit: this.state.limit + 2
+      limit: this.state.limit + 3
     });
   }
 
@@ -70,6 +70,8 @@ class Associations extends Component {
               <Spinner  color="dark" />
             </div>
           }
+        </Col>
+        <Col id="search" md="12">
         </Col>
         <Row id="association-row">
           {this.renderSmallWidgets()}
