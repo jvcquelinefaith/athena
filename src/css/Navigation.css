@@ -4,6 +4,10 @@
   font-size: 1em;
 }
 
+#logo {
+  font-weight: bold;
+}
+
 #athena-nav a:hover {
   border-bottom: 4px solid #F3CD1A;
   color: black;

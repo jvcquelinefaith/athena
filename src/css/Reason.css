@@ -6,28 +6,22 @@
 
 #reason-row {
   background-color: #F3EAFD;
-  width: 100%;
   padding-top: 2vh;
   padding-left: 16vw;
   padding-right: 16vw;
   padding-bottom: 5vh;
 }
 
-#top-row, #bottom-row {
-  display: inline-flex;
-  padding-bottom: 2vh;
+#stats-img, #stats-img-sup {
+  margin-bottom: 5vh;
+  padding-left: 10vw;
 }
 
-#bottom-row {
-  padding-left: 5vw;
-  padding-bottom: 5vh;
+#stats-img-sup {
+  padding-left: 15vw;
 }
 
-#stats-img {
-  margin-right: 6vw;
-}
-
-#stats-img p, #stats-img-sup p {
+#stats-img p, #stats-img-first p, #stats-img-sup p {
   font-weight: bold;
   color: rgb(0,0,0,0.87);
 }
@@ -39,7 +33,7 @@
   margin-left: -70px;
 }
 
-#stats-img p:after {
+#stats-img-first p:after, #stats-img p:after {
   content: url("../images/underline-schools.svg");
   position: absolute;
   margin-top: 14px;
@@ -51,14 +45,19 @@
 }
 
 @media screen and (max-width: 600px) {
-  #top-row {
-    overflow-x: hidden;
-  }
-
   #stats-img p:after {
     position: relative;
     margin-top: 0;
     margin-left: 0;
+  }
+
+  #stats-img, #stats-img-sup {
+    margin-bottom: 5vh;
+    padding-left: 0;
+  }
+
+  #stats-img-sup {
+    padding-left: 0;
   }
 
 }
