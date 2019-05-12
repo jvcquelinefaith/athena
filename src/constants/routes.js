@@ -1,4 +1,5 @@
 export const HOME = '/';
+export const ABOUT = '/about';
 export const SCHOOLS = '/schools';
 export const COMPANIES = '/companies';
 export const ASSOCIATIONS = '/associations';

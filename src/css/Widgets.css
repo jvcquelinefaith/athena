@@ -1,7 +1,8 @@
-#company-row, #school-row, #association-row {
+#company-row, #school-row, #association-row, #about-row {
   padding-top: 5vh;
   padding-left: 15vw;
   padding-right: 15vw;
+  background-color: white;
 }
 
 #company-header, #school-header, #association-header {
@@ -11,7 +12,14 @@
   background-color: #F3EAFD;
 }
 
-#association-header h1, #school-header h1, #company-header h1 {
+#about-header {
+  padding-top: 10vh;
+  padding-left: 49vw;
+  height: 25vh;
+  background-color: #F3EAFD;
+}
+
+#association-header h1, #school-header h1, #company-header h1, #about-header h1 {
   margin-top: 5vh;
 }
 
@@ -138,7 +146,7 @@
     display: none;
   }
 
-  #company-header, #school-header, #association-header {
+  #company-header, #school-header, #association-header, #about-header {
     padding-top: 5vh;
     padding-left: 5vw;
     height: 20vh;

@@ -3,9 +3,17 @@ import { Row, Col } from 'reactstrap';
 import './css/Footer.css';
 
 class Footer extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render() {
+    const white = { backgroundColor: 'white' };
+    const purple = { backgroundColor: '#F3EAFD' };
+    let style = (this.props.background == 'purple') ? purple : white;
+
     return (
-      <Row id="footer-row">
+      <Row id="footer-row" style={style}>
         <Col xs="6" md="4">
           <h4>Mission</h4>
           <p>Our goal is to get the population

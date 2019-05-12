@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './css/Navigation.css';
 import Home from './Home.js';
+import About from './pages/About.js';
 import Schools from './pages/Schools.js';
 import Companies from './pages/Companies.js';
 import Associations from './pages/Associations.js';
@@ -37,7 +38,7 @@ class App extends Component {
             <NavbarToggler id="toggler" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavLink>
+                <NavLink to="/about" href="/about">
                   about
                 </NavLink>
                 <NavLink to="/assocations" href="/associations">
@@ -56,6 +57,7 @@ class App extends Component {
             </Collapse>
           </Navbar>
           <Route path={ROUTES.HOME} exact component={Home} />
+          <Route path={ROUTES.ABOUT} exact component={About} />
           <Route path={ROUTES.SCHOOLS} component={Schools} />
           <Route path={ROUTES.COMPANIES} component={Companies} />
           <Route path={ROUTES.ASSOCIATIONS} component={Associations} />
