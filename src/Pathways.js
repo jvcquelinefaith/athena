@@ -20,7 +20,7 @@ class Pathways extends Component {
         <Col xs="12" md="12" id="pathways-header">
           <h1>Select your Path</h1>
           <p>the paths below have been paved
-          with career-making factors. <br/>
+          with career-changing stones. <br/>
           Keep exploring to learn more.</p>
         </Col>
         <Col xs="12" md="12" id="path-cards">
@@ -41,7 +41,7 @@ class Pathways extends Component {
               <CardBody>
                 <CardTitle><h3 id="underlined-companies">Companies</h3></CardTitle>
                 <CardText><p>Explore the leading companies
-                in tech that are making positive changes <br/> for WIC!</p>
+                in tech that are making positive changes for WIC!</p>
                 </CardText>
                 <Button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</Button>
               </CardBody>

@@ -15,7 +15,7 @@ class Reason extends Component {
           <p>get started with all the tools that build a <br/> successful career in computing.</p>
         </Col>
         <Col id="stats-img-first" xs="6" md="4">
-          <img src={require("./images/athena-stats.svg")}/>
+          <img src={require("./images/athena-ment.svg")}/>
           <p>Mentorship</p>
         </Col>
         <Col id="stats-img" xs="6" md="4">
@@ -23,15 +23,15 @@ class Reason extends Component {
           <p>Community</p>
         </Col>
         <Col id="stats-img-sup" xs="6" md="4">
-          <img src={require("./images/athena-stats.svg")}/>
+          <img src={require("./images/athena-sup.svg")}/>
           <p>Support</p>
         </Col>
         <Col id="stats-img" xs="6" md={{size: 4, offset:2}}>
-          <img src={require("./images/athena-stats.svg")}/>
+          <img src={require("./images/athena-recs.svg")}/>
           <p>Resources</p>
         </Col>
         <Col id="stats-img" xs="6" md="4">
-          <img src={require("./images/athena-stats.svg")}/>
+          <img src={require("./images/athena-opps.svg")}/>
           <p>Opportunities</p>
         </Col>
         <Col id="reason-footer" xs="12" md="12">
