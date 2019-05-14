@@ -1,6 +1,9 @@
-#athena-about {
-  padding-top: 10vh;
-  padding-bottom: 20vh;
+#about-row {
+  text-align: center;
+}
+
+#about-header {
+  text-align: center;
 }
 
 #about-footer {

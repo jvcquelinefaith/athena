@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Col, Row, Button } from 'reactstrap';
 import './css/Reason.css';
+import * as ROUTES from './constants/routes.js';
+
 
 class Reason extends Component {
   constructor(props) {
@@ -35,7 +37,7 @@ class Reason extends Component {
           <p>Opportunities</p>
         </Col>
         <Col id="reason-footer" xs="12" md="12">
-          <Button className="athena-primary">→ Get Started</Button>
+          <Button href={ROUTES.ABOUT} className="athena-primary">→ Get Started</Button>
         </Col>
       </Row>
     );

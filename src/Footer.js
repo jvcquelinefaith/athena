@@ -25,7 +25,7 @@ class Footer extends Component {
           <p id="copyright">© All Rights Reserved. Athena. 2019.</p>
         </Col>
 
-        <Col xs="6" md={{size: 2, offset: 1}}>
+        <Col xs="6" md={{size: 2, offset: 2}}>
           <h4>Pages</h4>
           <p>associations<br/>
           companies<br/>
