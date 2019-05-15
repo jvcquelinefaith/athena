@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "44c8d67e78d515713fd7",
-    "url": "/static/css/main.73c2adaf.chunk.css"
+    "revision": "53dedf3aba5b21533d5f",
+    "url": "/static/css/main.810e0e30.chunk.css"
   },
   {
-    "revision": "44c8d67e78d515713fd7",
-    "url": "/static/js/main.1d260582.chunk.js"
+    "revision": "53dedf3aba5b21533d5f",
+    "url": "/static/js/main.7a281257.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "29ce74cc65c63bb5799c",
+    "revision": "40df8c7ee3ca1766f489",
     "url": "/static/css/2.4811f0a3.chunk.css"
   },
   {
-    "revision": "29ce74cc65c63bb5799c",
-    "url": "/static/js/2.cda71946.chunk.js"
+    "revision": "40df8c7ee3ca1766f489",
+    "url": "/static/js/2.23d17a8c.chunk.js"
   },
   {
     "revision": "ba88906e24188770390aeb3e8007a53e",
@@ -88,11 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/athena-opps.3a5e206c.svg"
   },
   {
-    "revision": "41335583e0e10fe4deebfbbfcfc66442",
-    "url": "/static/media/athena-about.41335583.svg"
-  },
-  {
-    "revision": "c0bddfbc405d071470bae4560a65bf09",
+    "revision": "22895daaaa4a59c9cbea6661becabd70",
     "url": "/index.html"
   }
 ];
