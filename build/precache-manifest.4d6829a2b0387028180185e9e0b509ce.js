@@ -44,16 +44,16 @@ self.__precacheManifest = [
     "url": "/static/media/athena-hero.a0d02da3.svg"
   },
   {
-    "revision": "924864f336dd26fa70d1839de1e677bb",
-    "url": "/static/media/underline-association.924864f3.svg"
-  },
-  {
     "revision": "fba1cd7803b39a524dcb6d58c30df8cc",
     "url": "/static/media/underline-schools.fba1cd78.svg"
   },
   {
     "revision": "70e4b48ea1be91940e64ca1a969ad3f1",
     "url": "/static/media/underline-companies.70e4b48e.svg"
+  },
+  {
+    "revision": "924864f336dd26fa70d1839de1e677bb",
+    "url": "/static/media/underline-association.924864f3.svg"
   },
   {
     "revision": "fd536e0fb96a948cbcab83edb44ed4a3",
