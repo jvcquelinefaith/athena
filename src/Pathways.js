@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Col, Row, Card, CardImg, CardText, CardBody,
-  CardTitle, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody,
+  CardTitle } from 'reactstrap';
 import './css/Pathways.css';
 import * as ROUTES from './constants/routes.js';
 
@@ -16,14 +16,14 @@ class Pathways extends Component {
 
   render() {
     return (
-      <Row id="pathways-row">
-        <Col xs="12" md="12" id="pathways-header">
+      <div id="pathways-row">
+        <div id="pathways-header">
           <h1>Select your Path</h1>
           <p>the paths below have been paved
           with career-changing stones. <br/>
           Keep exploring to learn more.</p>
-        </Col>
-        <Col xs="12" md="12" id="path-cards">
+        </div>
+        <div id="path-cards">
             <Card id="path-card-r">
               <CardImg src={require("./images/athena-assoc.svg")}/>
               <CardBody>
@@ -33,7 +33,7 @@ class Pathways extends Component {
                 that boost your <br/>
                 career needs!</p>
                 </CardText>
-                <Button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</Button>
+                <button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</button>
               </CardBody>
             </Card>
             <Card id="path-card-r">
@@ -43,7 +43,7 @@ class Pathways extends Component {
                 <CardText><p>Explore the leading companies
                 in tech that are making positive changes for WIC!</p>
                 </CardText>
-                <Button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</Button>
+                <button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</button>
               </CardBody>
             </Card>
             <Card id="path-card">
@@ -53,11 +53,11 @@ class Pathways extends Component {
                 <CardText><p>Explore the schools taking radical
                 strides for diversity and inclusion for WIC <br/> in CS  education!</p>
                 </CardText>
-                <Button href={ROUTES.SCHOOLS} className="athena-primary">→ Learn More</Button>
+                <button href={ROUTES.SCHOOLS} className="athena-primary">→ Learn More</button>
               </CardBody>
             </Card>
-        </Col>
-      </Row>
+        </div>
+      </div>
     );
   }
 }
