@@ -2,80 +2,82 @@
   padding-top: 5vh;
   padding-left: 15vw;
   padding-right: 15vw;
-  background-color: white;
 }
 
-#company-header, #school-header, #association-header {
-  padding-top: 15vh;
-  padding-left: 52vw;
-  height: 30vh;
+#company-header, #school-header, #association-header, #about-header {
+  padding-top: 2vh;
+  text-align: center;
+  height: 20vh;
   background-color: #F3EAFD;
+	filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.1));
 }
 
-#about-header {
-  padding-top: 10vh;
-  height: 25vh;
-  background-color: #F3EAFD;
-}
-
-#association-header h1, #school-header h1, #company-header h1, #about-header h1 {
+#about-header h1, #association-header h1, #school-header h1, #company-header h1, #about-header h1 {
   margin-top: 5vh;
 }
 
-#association-header h1:before {
-  content: url("../images/association-header.svg");
+#company-header h1:after {
+  content: url("../images/header-underline.svg");
   position: absolute;
-  margin-top: -15vh;
-  margin-left: -17vw;
+  margin-left: -200px;
+  margin-top: 15px;
 }
 
-#school-header h1:before {
-  content: url("../images/school-header.svg");
+#association-header h1:after {
+  content: url("../images/header-underline.svg");
   position: absolute;
-  margin-top: -17vh;
-  margin-left: -14vw;
+  margin-left: -210px;
+  margin-top: 15px;
 }
 
-#company-header h1:before {
-  content: url("../images/company-header.svg");
+#school-header h1:after {
+  content: url("../images/header-underline.svg");
   position: absolute;
-  margin-top: -17vh;
-  margin-left: -12vw;
+  margin-left: -170px;
+  margin-top: 15px;
+}
+
+#about-header h1:after {
+  content: url("../images/header-underline.svg");
+  position: absolute;
+  margin-left: -150px;
+  margin-top: 15px;
 }
 
 .athena-small-widget {
-  height: 32vh;
+  height: 25vh;
   width: 20vw;
-  background: #FFFFFF;
-  border: 1px solid #F3EAFD;
-  box-shadow: 0 0 15px 0 #F3EAFD;
   margin-bottom: 2vh;
+  border: 0.5px solid #F3EAFD;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.1));
 }
 
-.athena-small-widget p {
-  font-size: 0.9em;
-  height: 4vh;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#separator {
+  margin-top: -5%;
+  margin-bottom: -10%;
 }
 
 .athena-small-widget h3 {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: bold;
-  height: 8vh;
+  text-align: center;
+  height: 15%;
+  display: block;
 }
 
 .athena-small-widget .athena-primary {
   font-size: 0.8em;
-  margin-bottom: 2vh;
+  font-weight: bold;
+  margin-bottom: 10%;
+  margin-left: 25%;
 }
 
 .tag-list {
   display: inline-flex;
-  height: 3vh;
+  height: 14%;
   width: 100%;
   overflow-x: scroll;
+  margin-bottom: 5%;
 }
 
 .tag-list::-webkit-scrollbar {
@@ -87,6 +89,8 @@
   color: rgb(0,0,0,0.54);
   border-radius: 0;
   margin-right: 0.5vw;
+  font-weight: normal;
+  font-family: "Work Sans";
 }
 
 #athena-load {

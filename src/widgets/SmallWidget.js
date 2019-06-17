@@ -49,18 +49,16 @@ import LearnMore from './LearnMore.js';
       <div>
         <Card className="athena-small-widget" onClick={this.toggle}>
           <CardBody className="card-body" hidden={this.state.hidden}>
-            <CardTitle>
-              <h3>
-                {this.props.name}
-              </h3>
-            </CardTitle>
-            <CardText><p>{this.props.desc}</p></CardText>
-            <Button className="athena-primary">→ Learn More</Button>
+            <h3>
+              {this.props.name}
+            </h3>
+            <img id="separator" src={require("../images/separator.svg")}/>
             <div className="tag-list">
               <Badge>{this.props.tags && this.props.tags[0]}</Badge>
               <Badge>{this.props.tags && this.props.tags[1]}</Badge>
               <Badge>{this.props.tags && this.props.tags[2]}</Badge>
             </div>
+            <Button className="athena-primary">→ Learn More</Button>
           </CardBody>
         </Card>
         {this.renderModal()}
