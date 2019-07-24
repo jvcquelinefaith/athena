@@ -1,0 +1,53 @@
+#about-row {
+  background-color: white;
+}
+
+#what-img {
+  padding-top: 100px;
+  margin-left: 15vw;
+}
+
+#what-separator, #why-separator, #how-separator {
+  width: 100%;
+}
+
+#what {
+  width: 50%;
+  height: 45vh;
+  background-color: white;
+  border: 2px solid #F9F9F9;
+  padding: 25px;
+  margin: 10px 0 0 0;
+}
+
+#about-row h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#what p {
+  margin-top: 5px;
+}
+
+#why {
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+  border: 2px solid #F9F9F9;
+  padding: 30px;
+  margin: 10px 0 10px 0;
+}
+
+#how {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border: 2px solid #F9F9F9;
+  padding: 30px;
+  margin: 10px 0 0 0;
+}
+
+#how-img {
+  padding-top: 100px;
+  margin-right: 15vw;
+}
