@@ -47,7 +47,8 @@ import LearnMore from './LearnMore.js';
   render() {
     return (
       <div>
-        <Card className="athena-small-widget" onClick={this.toggle}>
+        {/** TODO: version 2 <Card className="athena-small-widget" onClick={this.toggle}>*/}
+        <Card className="athena-small-widget">
           <CardBody className="card-body" hidden={this.state.hidden}>
             <h3>
               {this.props.name}
