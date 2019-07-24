@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+  CardTitle, Button } from 'reactstrap';
 import './css/Pathways.css';
 import * as ROUTES from './constants/routes.js';
 
@@ -29,11 +29,9 @@ class Pathways extends Component {
               <CardBody>
                 <CardTitle><h3 id="underlined">Associations</h3></CardTitle>
                 <CardText><p>Explore the various initiatives
-                for WIC that can provide
-                that boost your <br/>
-                career needs!</p>
+                for women in computing that can provide that boost your career needs!</p>
                 </CardText>
-                <button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</button>
+                <Button href={ROUTES.ASSOCIATIONS} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card-r">
@@ -41,9 +39,9 @@ class Pathways extends Component {
               <CardBody>
                 <CardTitle><h3 id="underlined-companies">Companies</h3></CardTitle>
                 <CardText><p>Explore the leading companies
-                in tech that are making positive changes for WIC!</p>
+                in tech that are making positive changes for women in computing!</p>
                 </CardText>
-                <button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</button>
+                <Button href={ROUTES.COMPANIES} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
             <Card id="path-card">
@@ -51,9 +49,9 @@ class Pathways extends Component {
               <CardBody>
                 <CardTitle><h3 id="underlined-schools">Schools</h3></CardTitle>
                 <CardText><p>Explore the schools taking radical
-                strides for diversity and inclusion for WIC <br/> in CS  education!</p>
+                strides for diversity and inclusion for women in computing in CS education!</p>
                 </CardText>
-                <button href={ROUTES.SCHOOLS} className="athena-primary">→ Learn More</button>
+                <Button href={ROUTES.SCHOOLS} className="athena-primary">→ Learn More</Button>
               </CardBody>
             </Card>
         </div>

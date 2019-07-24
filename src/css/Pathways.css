@@ -35,7 +35,7 @@
 }
 
 #path-card, #path-card-r {
-  height: 70vh;
+  height: auto;
   width: 20vw;
   border: 1px solid #F3EAFD;
   display: inline-flex;

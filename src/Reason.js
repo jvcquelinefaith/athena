@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import './css/Reason.css';
 import * as ROUTES from './constants/routes.js';
 
@@ -34,7 +35,7 @@ class Reason extends Component {
           </div>
         </div>
       <div id="reason-footer">
-        <button href={ROUTES.ABOUT} className="athena-primary">→ Get Started</button>
+        <Button href={ROUTES.ABOUT} className="athena-primary">→ Get Started</Button>
       </div>
     </div>
     );
