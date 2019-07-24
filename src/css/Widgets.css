@@ -1,13 +1,16 @@
 #company-row, #school-row, #association-row, #about-row {
   padding-top: 5vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 17vw;
+  padding-right: 12vw;
+  background-color: #F9F9F9;
 }
 
 #company-header, #school-header, #association-header, #about-header {
   padding-top: 2vh;
   text-align: center;
   height: 20vh;
+  margin-bottom: -5vh;
+  width: 100%;
   background-color: #F3EAFD;
 	filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.1));
 }
@@ -45,24 +48,35 @@
 }
 
 .athena-small-widget {
-  height: 25vh;
-  width: 20vw;
-  margin-bottom: 2vh;
-  border: 0.5px solid #F3EAFD;
+  height: auto;
+  width: 16vw;
+  margin-bottom: 8vh;
+  margin-right: 2vw;
+  border: none;
   filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.1));
 }
 
 #separator {
-  margin-top: -5%;
-  margin-bottom: -10%;
+  margin-top: -5vh;
+  width: 13vw;
+}
+
+#yellow-separator {
+  width: 13vw;
+}
+
+#desc {
+  height: 20%;
 }
 
 .athena-small-widget h3 {
   font-size: 0.9em;
   font-weight: bold;
   text-align: center;
-  height: 15%;
-  display: block;
+}
+
+.athena-small-widget p {
+  font-size: 0.7em;
 }
 
 .athena-small-widget .athena-primary {
@@ -74,10 +88,9 @@
 
 .tag-list {
   display: inline-flex;
-  height: 14%;
+  height: 10%;
   width: 100%;
   overflow-x: scroll;
-  margin-bottom: 5%;
 }
 
 .tag-list::-webkit-scrollbar {
@@ -111,7 +124,8 @@
 }
 
 .athena-modal-header {
-  background-color: #F3EAFD;
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
 }
 
 .athena-modal-header h4 {
@@ -145,10 +159,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  #association-header h1:before,  #school-header h1:before, #company-header h1:before {
-    display: none;
-  }
-
   #company-header, #school-header, #association-header, #about-header {
     padding-top: 5vh;
     padding-left: 5vw;
@@ -170,8 +180,8 @@
   }
 
   .athena-small-widget {
-    height: auto;
-    width: 70vw;
+    width: 60vw;
     margin-bottom: 1vh;
+    left: 10%;
   }
 }

@@ -13,7 +13,9 @@ class LearnMore extends Component {
       <div>
         <Modal size="lg" className="athena-modal" isOpen={this.props.modal} toggle={this.props.toggle}>
           <ModalHeader className="athena-modal-header" toggle={this.toggle}>
+            <div id="profile-photo">img</div>
             <h4>{this.props.name}</h4>
+            <img id="separator" src={require("../images/separator.svg")} />
           </ModalHeader>
           <ModalBody className="athena-modal-body">
             <h4>About this Organization.</h4>
@@ -23,10 +25,6 @@ class LearnMore extends Component {
                   return <h5>{tag}</h5>
                 })}
           </ModalBody>
-          <ModalFooter className="athena-modal-footer">
-            <Button className="athena-primary" onClick={this.props.toggle}>→ Apply Now</Button>
-            <Button className="athena-secondary" onClick={this.props.toggle}>→ Close</Button>
-          </ModalFooter>
         </Modal>
       </div>
     );

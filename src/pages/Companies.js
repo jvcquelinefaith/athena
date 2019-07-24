@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Button, Row, Spinner } from 'reactstrap';
+import { Button, Row, Spinner } from 'reactstrap';
 import '../css/Widgets.css';
 import SmallWidget from '../widgets/SmallWidget.js';
 import Footer from '../Footer.js';
@@ -10,7 +10,7 @@ class Companies extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      limit: 3,
+      limit: 4,
       error: false,
       loading: true,
       widgets: false,
@@ -41,16 +41,14 @@ class Companies extends Component {
 
   onLoadMore() {
     this.setState({
-      limit: this.state.limit + 3
+      limit: this.state.limit + 4
     });
   }
 
   renderSmallWidgets() {
     return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
-        <Col xs="12" md="4">
-          <SmallWidget key={widget_prop.aid}{...widget_prop}/>
-        </Col>
+         <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         );
     });
   }
@@ -60,8 +58,8 @@ class Companies extends Component {
 
     return (
       <Row>
-        <Col md="12" id="company-header"><h1>companies</h1></Col>
-        <Col id="loading" xs="12" md="12">
+        <div id="company-header"><h1>companies</h1></div>
+        <div id="loading">
           { loading &&
             <div>
               <Spinner  color="dark" />
@@ -69,7 +67,9 @@ class Companies extends Component {
               <Spinner  color="dark" />
             </div>
           }
-        </Col>
+        </div>
+        <div id="search">
+        </div>
         <Row id="company-row">
           {this.renderSmallWidgets()}
           { widgets &&

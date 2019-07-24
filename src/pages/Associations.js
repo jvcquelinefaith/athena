@@ -10,7 +10,7 @@ class Associations extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      limit: 3,
+      limit: 4,
       error: false,
       loading: true,
       widgets: false,
@@ -22,7 +22,7 @@ class Associations extends Component {
 
   onLoadMore() {
     this.setState({
-      limit: this.state.limit + 3
+      limit: this.state.limit + 4
     });
   }
 
@@ -50,9 +50,7 @@ class Associations extends Component {
   renderSmallWidgets() {
     return this.state.widget_props.slice(0,this.state.limit).map((widget_prop)=>{
       return(
-        <Col xs="12" md="4">
-          <SmallWidget key={widget_prop.aid}{...widget_prop}/>
-        </Col>
+         <SmallWidget key={widget_prop.aid}{...widget_prop}/>
         );
     });
   }
@@ -62,8 +60,8 @@ class Associations extends Component {
 
     return (
       <Row>
-        <Col xs="12" md="12" id="association-header"><h1>associations</h1></Col>
-        <Col id="loading" xs="12" md="12">
+        <div id="association-header"><h1>associations</h1></div>
+        <div id="loading">
           { loading &&
             <div>
               <Spinner  color="dark" />
@@ -71,9 +69,9 @@ class Associations extends Component {
               <Spinner  color="dark" />
             </div>
           }
-        </Col>
-        <Col id="search" md="12">
-        </Col>
+        </div>
+        <div id="search">
+        </div>
         <Row id="association-row">
           {this.renderSmallWidgets()}
           { widgets &&

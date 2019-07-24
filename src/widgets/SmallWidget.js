@@ -53,12 +53,13 @@ import LearnMore from './LearnMore.js';
               {this.props.name}
             </h3>
             <img id="separator" src={require("../images/separator.svg")}/>
+            <p id="desc">{this.props.desc}</p>
+            <img id="yellow-separator" src={require("../images/yellow-separator.svg")}/>
             <div className="tag-list">
               <Badge>{this.props.tags && this.props.tags[0]}</Badge>
               <Badge>{this.props.tags && this.props.tags[1]}</Badge>
               <Badge>{this.props.tags && this.props.tags[2]}</Badge>
             </div>
-            <Button className="athena-primary">→ Learn More</Button>
           </CardBody>
         </Card>
         {this.renderModal()}
