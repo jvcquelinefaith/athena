@@ -22,38 +22,37 @@ class About extends Component {
             <img id="what-separator" src={require("./../images/what-separator.svg")}/>
               <p>Athena is an online repository with all the relevant initiatives and resources for women in computing.</p>
               <p>It is available, accessible and highly visible to all women at every career level: from high school to the C-suite.</p>
-              <p>It provides information about every institute for higher education with positive learning environments for women.</p>
           </div>
 
           <div id="how">
             <h3>How Athena Works</h3>
             <img id="how-separator" src={require("./../images/how-separator.svg")}/>
             <p>
-              <strong>Athena informs decision-making.</strong><br/>
+              <strong>Athena informs decision-making</strong><br/>
                It is built to equip women with the info the need to
               make confident career decisions
             </p>
             <p>
-              <strong>Athena is user-centered.</strong><br/>
+              <strong>Athena is user-centered</strong><br/>
                It is built to satisfy research-backed user needs
             </p>
             <p>
-              <strong>Athena is innovative.</strong><br/>
+              <strong>Athena is innovative</strong><br/>
               It is the first platform of its kind with such
               functionality
             </p>
             <p>
-              <strong>Athena aggregates key factors.</strong><br/>
+              <strong>Athena aggregates key factors</strong><br/>
                It gives a holistic picture of the factors affecting
               career success in computing
             </p>
             <p>
-              <strong>Athena is a one-stop-shop.</strong><br/>
+              <strong>Athena is a one-stop-shop</strong><br/>
                It stores valuable information about associations,
               companies as well as schools all in one place
             </p>
             <p>
-              <strong>Athena is examplary.</strong><br/>
+              <strong>Athena is examplary</strong><br/>
                It strives to make companies conscious of steps
               they could take for larger WIC impact
             </p>

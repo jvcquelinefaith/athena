@@ -22,6 +22,18 @@
   margin-left: -135px;
 }
 
+@media screen and (min-width: 1920px) {
+  #about-h {
+    margin-left: 20%;
+    margin-right: 10px;
+  }
+
+  #athena-hero {
+    float: right;
+  }
+
+}
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   #athena-hero {
     display: none;

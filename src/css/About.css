@@ -13,7 +13,7 @@
 
 #what {
   width: 50%;
-  height: 45vh;
+  height: 35vh;
   background-color: white;
   border: 2px solid #F9F9F9;
   padding: 25px;
@@ -50,4 +50,30 @@
 #how-img {
   padding-top: 100px;
   margin-right: 15vw;
+}
+
+@media screen and (max-width: 1024px) {
+  #what-img {
+    display: none;
+  }
+
+  #what {
+    width: 100%;
+    height: auto;
+  }
+
+  #how {
+    width: 100%;
+    height: auto;
+  }
+
+  #why {
+    height: auto;
+  }
+
+  #how-img {
+    display: none;
+  }
+
+
 }

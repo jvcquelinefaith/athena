@@ -6,6 +6,7 @@ import {
   FormGroup, Label, Input,
   Button,
 } from 'reactstrap';
+import Footer from '../Footer.js';
 import { withFirebase } from '../firebase';
 import * as ROUTES from '../constants/routes.js';
 import '../css/Login.css';
@@ -49,40 +50,43 @@ class SignInFormBase extends Component {
     const isInvalid = password === '' || email === '';
 
     return (
-      <Col md={{ size: 4, offset: 3 }} className="sign-in">
-        <h2>Sign In</h2>
-        <h5>if you dont't have an account yet, click "<a href={ROUTES.SIGN_UP}>sign up</a>"</h5>
-        <Form className="form" onSubmit={this.onSubmit}>
-          {error && <p>{error.message}</p>}
-          <Col>
-            <FormGroup>
-              <Label>Email</Label>
-              <Input
-                name="email"
-                value={email}
-                onChange={this.onChange}
-                type="text"
-                placeholder="Email Address"
-              />
-            </FormGroup>
-          </Col>
-          <Col>
-            <FormGroup>
-              <Label for="examplePassword">Password</Label>
-              <Input
-                name="password"
-                value={password}
-                onChange={this.onChange}
-                type="password"
-                placeholder="Password"
-              />
-            </FormGroup>
-          </Col>
-          <Button disabled={isInvalid} className="athena-primary" type="submit">
-            → Sign In
-          </Button>
-        </Form>
-      </Col>
+      <div>
+        <Col md={{ size: 4, offset: 3 }} className="sign-in">
+          <h2>Sign In</h2>
+          <h5>if you dont't have an account yet, click "<a href={ROUTES.SIGN_UP}>sign up</a>"</h5>
+          <Form className="form" onSubmit={this.onSubmit}>
+            {error && <p>{error.message}</p>}
+            <Col>
+              <FormGroup>
+                <Label>Email</Label>
+                <Input
+                  name="email"
+                  value={email}
+                  onChange={this.onChange}
+                  type="text"
+                  placeholder="Email Address"
+                />
+              </FormGroup>
+            </Col>
+            <Col>
+              <FormGroup>
+                <Label for="examplePassword">Password</Label>
+                <Input
+                  name="password"
+                  value={password}
+                  onChange={this.onChange}
+                  type="password"
+                  placeholder="Password"
+                />
+              </FormGroup>
+            </Col>
+            <Button disabled={isInvalid} className="athena-primary" type="submit">
+              → Sign In
+            </Button>
+          </Form>
+        </Col>
+        <Footer background={'purple'}/>
+      </div>
     );
   }
 }

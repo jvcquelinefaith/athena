@@ -6,6 +6,7 @@ import {
   FormGroup, Label, Input,
   Button
 } from 'reactstrap';
+import Footer from '../Footer.js';
 import * as ROUTES from '../constants/routes.js';
 import { withFirebase } from '../firebase';
 import '../css/Login.css';
@@ -65,53 +66,56 @@ class SignUpFormBase extends Component {
     const props = this.props;
 
     return (
-      <Col xs="12" md={{ size: 6, offset: 3 }} className="sign-up">
-        <h2>Sign Up</h2>
-        <h5>if you already have an account with us, click "<a href={ROUTES.SIGN_IN}>sign in</a>"</h5>
-        <Form className="form" onSubmit={this.onSubmit}>
-          {error && <p invalid id="errorMessage">{error.message}</p>}
-          <Col xs="12">
-            <FormGroup>
-              <Label>Username</Label>
-              <Input
-                type="text"
-                name="username"
-                onChange={this.onChange}
-                value={username}
-                id="username"
-                placeholder="athenagirl95"
-              />
-            </FormGroup>
-          </Col>
-          <Col xs="12">
-            <FormGroup>
-              <Label>Email</Label>
-              <Input
-                type="email"
-                name="email"
-                onChange={this.onChange}
-                value={email}
-                id="exampleEmail"
-                placeholder="athena_girl@email.com"
-              />
-            </FormGroup>
-          </Col>
-          <Col xs="12">
-            <FormGroup>
-              <Label for="examplePassword">Password</Label>
-              <Input
-                type="password"
-                name="password"
-                onChange={this.onChange}
-                value={password}
-                id="examplePassword"
-                placeholder="********"
-              />
-            </FormGroup>
-          </Col>
-          <Button type="submit" className="athena-primary">→ Sign Up</Button>
-        </Form>
-      </Col>
+      <div>
+        <Col xs="12" md={{ size: 6, offset: 3 }} className="sign-up">
+          <h2>Sign Up</h2>
+          <h5>if you already have an account with us, click "<a href={ROUTES.SIGN_IN}>sign in</a>"</h5>
+          <Form className="form" onSubmit={this.onSubmit}>
+            {error && <p invalid id="errorMessage">{error.message}</p>}
+            <Col xs="12">
+              <FormGroup>
+                <Label>Username</Label>
+                <Input
+                  type="text"
+                  name="username"
+                  onChange={this.onChange}
+                  value={username}
+                  id="username"
+                  placeholder="athenagirl95"
+                />
+              </FormGroup>
+            </Col>
+            <Col xs="12">
+              <FormGroup>
+                <Label>Email</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  onChange={this.onChange}
+                  value={email}
+                  id="exampleEmail"
+                  placeholder="athena_girl@email.com"
+                />
+              </FormGroup>
+            </Col>
+            <Col xs="12">
+              <FormGroup>
+                <Label for="examplePassword">Password</Label>
+                <Input
+                  type="password"
+                  name="password"
+                  onChange={this.onChange}
+                  value={password}
+                  id="examplePassword"
+                  placeholder="********"
+                />
+              </FormGroup>
+            </Col>
+            <Button type="submit" className="athena-primary">→ Sign Up</Button>
+          </Form>
+        </Col>
+        <Footer background={'purple'}/>
+      </div>
     );
   }
 }
