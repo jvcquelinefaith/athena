@@ -1,35 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "984c801a39d724464af5",
-    "url": "/static/css/main.966343b4.chunk.css"
+    "revision": "f07efddc12e87097e4e5",
+    "url": "/static/css/main.f05023ee.chunk.css"
   },
   {
-    "revision": "984c801a39d724464af5",
-    "url": "/static/js/main.b2ba7f7c.chunk.js"
+    "revision": "f07efddc12e87097e4e5",
+    "url": "/static/js/main.459e175f.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "e8e9a83840d2078682f5",
+    "revision": "c2c72b97046479d8adec",
     "url": "/static/css/2.4811f0a3.chunk.css"
   },
   {
-    "revision": "e8e9a83840d2078682f5",
-    "url": "/static/js/2.fc7abc6f.chunk.js"
+    "revision": "c2c72b97046479d8adec",
+    "url": "/static/js/2.c9023ffc.chunk.js"
   },
   {
-    "revision": "ba88906e24188770390aeb3e8007a53e",
-    "url": "/static/media/school-header.ba88906e.svg"
+    "revision": "78f57dc730cfa4bb4d27cfb617f7e11b",
+    "url": "/static/media/header-underline.78f57dc7.svg"
   },
   {
-    "revision": "55bd217b8dfef9a46250f71219de2ba4",
-    "url": "/static/media/company-header.55bd217b.svg"
-  },
-  {
-    "revision": "0c34f956bc2581fa6bb0369a46a2803f",
-    "url": "/static/media/association-header.0c34f956.svg"
+    "revision": "b4325af8c90c345e0dcad4be56f313b8",
+    "url": "/static/media/separator.b4325af8.svg"
   },
   {
     "revision": "30be604d29fd477c201fb1d6e668eaeb",
@@ -44,16 +40,16 @@ self.__precacheManifest = [
     "url": "/static/media/athena-hero.a0d02da3.svg"
   },
   {
+    "revision": "924864f336dd26fa70d1839de1e677bb",
+    "url": "/static/media/underline-association.924864f3.svg"
+  },
+  {
     "revision": "70e4b48ea1be91940e64ca1a969ad3f1",
     "url": "/static/media/underline-companies.70e4b48e.svg"
   },
   {
     "revision": "fba1cd7803b39a524dcb6d58c30df8cc",
     "url": "/static/media/underline-schools.fba1cd78.svg"
-  },
-  {
-    "revision": "924864f336dd26fa70d1839de1e677bb",
-    "url": "/static/media/underline-association.924864f3.svg"
   },
   {
     "revision": "fd536e0fb96a948cbcab83edb44ed4a3",
@@ -88,7 +84,31 @@ self.__precacheManifest = [
     "url": "/static/media/athena-recs.79ab646a.svg"
   },
   {
-    "revision": "9060123c159ed55639f1614f02a01ff2",
+    "revision": "7e53740aba67e7c6c786a4e25774e8ce",
+    "url": "/static/media/what-img.7e53740a.svg"
+  },
+  {
+    "revision": "2f10f5f2a70901cea7b9d6d9a0a1e71d",
+    "url": "/static/media/what-separator.2f10f5f2.svg"
+  },
+  {
+    "revision": "2f10f5f2a70901cea7b9d6d9a0a1e71d",
+    "url": "/static/media/how-separator.2f10f5f2.svg"
+  },
+  {
+    "revision": "a540b271c107b3427902671f0c2b62ad",
+    "url": "/static/media/how-img.a540b271.svg"
+  },
+  {
+    "revision": "dc3f37dbebbeee6e4f544282ac7f15a2",
+    "url": "/static/media/why-separator.dc3f37db.svg"
+  },
+  {
+    "revision": "75e8f0f120aabe35d3b5ec55e5f9a18e",
+    "url": "/static/media/yellow-separator.75e8f0f1.svg"
+  },
+  {
+    "revision": "e167dd58c7c9e4d95a8920a662e89e50",
     "url": "/index.html"
   }
 ];
