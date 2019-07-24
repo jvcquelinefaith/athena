@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import './css/Footer.css';
+import * as ROUTES from './constants/routes.js';
 
 class Footer extends Component {
   constructor(props){
@@ -27,30 +28,30 @@ class Footer extends Component {
 
         <Col xs="6" md={{size: 2, offset: 2}}>
           <h4>Pages</h4>
-          <p>associations<br/>
-          companies<br/>
-          schools<br/>
-          about</p>
+          <a href={ROUTES.ASSOCIATIONS}>associations</a><br/>
+          <a href={ROUTES.COMPANIES}>companies</a><br/>
+          <a href={ROUTES.SCHOOLS}>schools</a><br/>
+          <a href={ROUTES.ABOUT}>about</a><br/>
           <br/>
           <p>Privacy Policy</p>
         </Col>
 
         <Col xs="6" md="2">
           <h4>Social</h4>
-          <p>facebook<br/>
-          instagram<br/>
-          linkedin<br/>
-          twitter</p>
+          <a href={ROUTES.FACEBOOK}>facebook</a><br/>
+          <a href={ROUTES.INSTAGRAM}>instagram</a><br/>
+          <a>linkedin</a><br/>
+          <a>twitter</a><br/>
           <br/>
           <p>Partnerships</p>
         </Col>
 
         <Col xs="6" md="2">
           <h4>Numbers</h4>
-          <p>145 women to date<br/>
-          14 associations<br/>
-          12 companies<br/>
-          11 schools</p>
+          <a>60 women to date</a><br/>
+          <a>10 associations</a><br/>
+          <a>06 companies</a><br/>
+          <a>11 schools</a><br/>
           <br/>
           <p>Privacy Policy</p>
         </Col>

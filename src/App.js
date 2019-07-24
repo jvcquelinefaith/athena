@@ -50,9 +50,11 @@ class App extends Component {
                 <NavLink to="/schools" href="/schools">
                   schools
                 </NavLink>
-                <NavLink to="/signup" href="/signup">
+                {
+                  /**TODO: Version 2 <NavLink to="/signup" href="/signup">
                   sign up
-                </NavLink>
+                </NavLink>*/
+                }
               </Nav>
             </Collapse>
           </Navbar>
