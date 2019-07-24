@@ -14,6 +14,7 @@ class Associations extends Component {
       error: false,
       loading: true,
       widgets: false,
+      hide: false,
       widget_props: []
     };
 
@@ -21,9 +22,15 @@ class Associations extends Component {
   }
 
   onLoadMore() {
-    this.setState({
-      limit: this.state.limit + 4
-    });
+    if (this.state.limit < this.state.widget_props.length) {
+      this.setState({
+        limit: this.state.limit + 4
+      });
+    } else {
+      this.setState({
+        hide: true
+      });
+    }
   }
 
   componentDidMount() {
@@ -56,7 +63,7 @@ class Associations extends Component {
   }
 
   render() {
-    const { loading, widgets } = this.state;
+    const { loading, widgets, hide } = this.state;
 
     return (
       <Row>
@@ -74,7 +81,7 @@ class Associations extends Component {
         </div>
         <Row id="association-row">
           {this.renderSmallWidgets()}
-          { widgets &&
+          { widgets && !hide &&
             <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">→ View more</Button>
           }
         </Row>

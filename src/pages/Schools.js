@@ -14,6 +14,7 @@ class Schools extends Component {
       error: false,
       loading: true,
       widgets: false,
+      hide: false,
       widget_props: []
     };
     this.onLoadMore = this.onLoadMore.bind(this);
@@ -40,9 +41,15 @@ class Schools extends Component {
   }
 
   onLoadMore() {
-    this.setState({
-      limit: this.state.limit + 4
-    });
+    if (this.state.limit < this.state.widget_props.length) {
+      this.setState({
+        limit: this.state.limit + 4
+      });
+    } else {
+      this.setState({
+        hide: true
+      });
+    }
   }
 
   renderSmallWidgets() {
@@ -54,7 +61,7 @@ class Schools extends Component {
   }
 
   render() {
-    const { loading, widgets } = this.state;
+    const { loading, widgets, hide } = this.state;
 
     return (
       <Row>
@@ -72,7 +79,7 @@ class Schools extends Component {
         </div>
         <Row id="school-row">
           {this.renderSmallWidgets()}
-          { widgets &&
+          { widgets && !hide &&
             <Button id="athena-load" onClick={this.onLoadMore} className="athena-primary">→ View more</Button>
           }
         </Row>
