@@ -158,6 +158,12 @@
   font-style: italic;
 }
 
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .athena-small-widget {
+    width: 32vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #company-header, #school-header, #association-header, #about-header {
     padding-top: 5vh;
